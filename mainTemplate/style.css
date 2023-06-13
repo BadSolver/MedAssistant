@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 *,
 *::after,
 *::before {
@@ -25,7 +27,44 @@ a {
   margin: 0 auto; /*0 сверху и снизу и автоматические отступы слева и справа*/ 
 }
 
-.footer {
+header {
+  background: rgb(57,206,142);
+  background: linear-gradient(0deg, rgba(57,206,142,1) 0%, rgba(78,183,178,1) 100%);
+  color: #ffffff
+}
+
+.header__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.search-input{
+  border: none;
+  background-color:#F0F1F3;
+  border-radius: 25px;
+  min-width: 650px;
+  margin-left: 200px;
+  padding: 12px;
+}
+
+.search-input::placeholder{
+  font-family: 'Montserrat', sans-serif;
+  color: #BEBEBE;
+}
+
+.search-btn{
+  border: none;
+  background-color: transparent;
+  position: absolute;
+}
+
+.search-btn::before{
+  content: url(images/search.svg);
+}
+
+footer {
   background: rgb(57,206,142);
   background: linear-gradient(0deg, rgba(57,206,142,1) 0%, rgba(78,183,178,1) 100%);
   color: #ffffff
