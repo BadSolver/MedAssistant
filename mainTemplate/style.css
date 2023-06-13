@@ -9,6 +9,12 @@
 html {
   scroll-behavior: smooth;
 }
+.wrapper{
+display: flex;
+height: 100vh;
+flex-direction: column;
+justify-content: space-between;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
