@@ -5,74 +5,355 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../resetStyles.css">
     <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
     <div class="wrapper">
-    <header class="footer">
-        <div class="container">
-            <div class="header__inner">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
 
-                <div class="header__logo">
-                    <img src="images/header_logo.svg" alt="logo" class="logo">
-                </div>
+                    <div class="header__logo">
+                        <img src="images/header_logo.svg" alt="logo" class="logo">
+                    </div>
 
-                <div class="header__search">
-                    <input type="text" placeholder="Поиск" class="search-input">
-                    <button type="submit" class="search-btn"></button>
-                </div>
+                    <div class="header__search">
+                        <input type="text" placeholder="Поиск" class="search-input">
+                        <button type="submit" class="search-btn"></button>
+                    </div>
 
-                <div class="header__auth">
-                    <img src="images/auth.svg" alt="auth" class="auth">
+                    <div class="header__auth">
+                        <img src="images/auth.svg" alt="auth" class="auth">
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
+        <main class="main">
+            <div class="main__container">
+                <div class="main__inner">
+                    <h1 class="main__title">Зона травмы</h1>
+                    <p class="main__text">Выберите зону, которая была травмирована</p>
+                </div>
+                <div class="main__accordeon">
+                    <div class="accordeon-header">
+                        <div class="accordeon-logo">
+                            <img src="./images/accordeon-shoulder.svg" alt="shoulder">
+                        </div>
+                        <h3 class="accordeon-title">
+                            Плечевой пояс
+                        </h3>
+                        <div class="accordeon-minus">
+                            <img src="./images/accordeon-plus.svg" alt="minus">
+                        </div>
 
-    
+                    </div>
+                    <div class="accordeon-content">
+                        <div class="accordeon-content-open">
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__col1">
-                    <div class="footer__logo">
+                            <p class="accordeon-content-title">Ключица</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Акромион</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Плечевой сустав</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Лопатка </p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Акромион</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Плечевой сустав</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="main__accordeon">
+                    <div class="accordeon-header">
+                        <div class="accordeon-logo">
+                            <img src="./images/accordeon-hip.svg" alt="shoulder">
+                        </div>
+                        <h3 class="accordeon-title">
+                            Тазобедренная часть
+                        </h3>
+                        <div class="accordeon-minus">
+                            <img src="./images/accordeon-plus.svg" alt="minus">
+                        </div>
+
+                    </div>
+                    <div class="accordeon-content">
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Ключица</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Акромион</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Плечевой сустав</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Лопатка </p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Акромион</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Плечевой сустав</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="main__accordeon">
+                    <div class="accordeon-header">
+                        <div class="accordeon-logo">
+                            <img src="./images/accordeon-belt.svg" alt="belt">
+                        </div>
+                        <h3 class="accordeon-title">
+                            Пояс нижних конечностей
+                        </h3>
+                        <div class="accordeon-minus">
+                            <img src="./images/accordeon-plus.svg" alt="minus">
+                        </div>
+
+                    </div>
+                    <div class="accordeon-content">
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Ключица</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Акромион</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Плечевой сустав</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Лопатка </p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Акромион</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Плечевой сустав</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="main__accordeon">
+                    <div class="accordeon-header">
+                        <div class="accordeon-logo">
+                            <img src="./images/accordeon-chest.svg" alt="chest">
+                        </div>
+                        <h3 class="accordeon-title">
+                            Грудная клетка
+                        </h3>
+                        <div class="accordeon-minus">
+                            <img src="./images/accordeon-plus.svg" alt="minus">
+                        </div>
+
+                    </div>
+                    <div class="accordeon-content">
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Ключица</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Акромион</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Плечевой сустав</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Лопатка </p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Акромион</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Плечевой сустав</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="main__accordeon">
+                    <div class="accordeon-header">
+                        <div class="accordeon-logo">
+                            <img src="./images/accordeon-foot.svg" alt="foot">
+                        </div>
+                        <h3 class="accordeon-title">
+                            Скелет свободной нижней части
+                        </h3>
+                        <div class="accordeon-minus">
+                            <img src="./images/accordeon-plus.svg" alt="minus">
+                        </div>
+
+                    </div>
+                    <div class="accordeon-content">
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Ключица</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Акромион</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Плечевой сустав</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Лопатка </p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Акромион</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+                        <span class="accordeon-content-border"></span>
+                        <div class="accordeon-content-open">
+
+                            <p class="accordeon-content-title">Плечевой сустав</p>
+                            <span class="accordeon-content-arrow"></span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__col1">
                         <div class="footer__logo">
-                            <img src="images/footer_logo.svg" alt="logo" class="logo">
+                            <div class="footer__logo">
+                                <img src="images/footer_logo.svg" alt="logo" class="logo">
+                            </div>
+                            <p class="footer__text">© 2023 Медицинский ассистент </p>
                         </div>
-                        <p class="footer__text">© 2023 Медицинский ассистент </p>
-                    </div>
-                </div>
-
-                <div class="footer__col2">
-                    <div class="footer__links">
-                        <a href="#" class="footer__link">О Мед Ассистенте</a>
-                        <a href="#" class="footer__link">Как это работает</a>
-                        <a href="#" class="footer__link">Часто задаваемые вопросы</a>
                     </div>
 
-                    <div class="footer__connect">
-                        <div class="footer__contacts">
-                            <a href="tel:+74953254333" class="footer__contacts-link">
-                                <img src="images/Ellipse.svg" alt="footer__contacts-img" class="footer__contacts-img">
-                                <span>+7 495 325-43-33</span>
-                            </a>
-                            <a href="mailto:medassiat.ru" class="footer__contacts-link">
-                                <img src="images/Ellipse.svg" alt="footer__contacts-img" class="footer__contacts-img">
-                                <span>medassiat.ru</span>
-                            </a>
+                    <div class="footer__col2">
+                        <div class="footer__links">
+                            <a href="#" class="footer__link">О Мед Ассистенте</a>
+                            <a href="#" class="footer__link">Как это работает</a>
+                            <a href="#" class="footer__link">Часто задаваемые вопросы</a>
                         </div>
-                        <div class="footer__contacts-btn">
-                            <button class="footer-btn">Задать вопрос</button>
+
+                        <div class="footer__connect">
+                            <div class="footer__contacts">
+                                <a href="tel:+74953254333" class="footer__contacts-link">
+                                    <div class="footer__contacts-container">
+                                        <div class="footer__contacts-overlay">
+
+                                            <img src="./images/footer-phone.svg" alt="phone logo"
+                                                class="footer__contacts-logo">
+                                        </div>
+                                    </div>
+                                    <span>+7 495 325-43-33</span>
+                                </a>
+                                <a href="mailto:medassiat.ru" class="footer__contacts-link">
+                                    <div class="footer__contacts-container">
+                                        <div class="footer__contacts-overlay">
+
+                                            <img src="./images/footer-mail.svg" alt="phone logo"
+                                                class="footer__contacts-logo">
+                                        </div>
+                                    </div>
+                                    <span>medassiat.ru</span>
+                                </a>
+                            </div>
+                            <div class="footer__contacts-btn">
+                                <button class="footer-btn">Задать вопрос</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-</div>
+        </footer>
+    </div>
 </body>
 
 </html>
