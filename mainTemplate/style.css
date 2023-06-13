@@ -1,3 +1,107 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 0 auto
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1220px; /*не использовать статичную ширину для адаптива*/
+  /* padding: 0 10px; чтобы не прилегало */
+  margin: 0 auto; /*0 сверху и снизу и автоматические отступы слева и справа*/ 
+}
+
+.footer {
+  background: rgb(57,206,142);
+  background: linear-gradient(0deg, rgba(57,206,142,1) 0%, rgba(78,183,178,1) 100%);
+  color: #ffffff
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 220px;
+}
+
+.footer__text{
+  font-size: 13px;
+}
+
+.footer_col2{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links{
+display: flex;
+justify-content: end;
+margin-bottom: 25px;
+}
+
+.footer__link {
+  color: #fff;
+  font-size: 15px;
+  margin-left: 35px;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__connect{
+  display: flex;
+  justify-content: end;
+}
+
+.footer__contacts {
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  display: flex;
+  
+}
+
+.footer__contacts-link {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.footer__contacts-img {
+  margin-right: 10px;
+}
+
+.footer-btn{
+  color: #fff;
+  border: 1px solid #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: transparent;
+  border-radius: 20px;
+  min-width: 240px;
+  min-height: 40px;
+}
+
+.footer-btn:hover{
+  color: #39CE8E;
+  background-color: #fff;
+}
+
 .accordion {
     display: flex;
     flex-direction: column;
