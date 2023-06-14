@@ -68,6 +68,44 @@ header {
   content: url(images/search_active.svg);
 }
 
+.nav__inner{
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+.tabs{
+  min-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);;
+  grid-template-rows: 50px;
+  justify-content: stretch;
+  justify-items: stretch;
+}
+
+.tab-switch{
+  display: none;
+}
+
+.tab-label {
+  display: block;
+  background: transparent;
+  color: #BFBFC1;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 17px;
+  text-align: center;
+}
+
+.tab-label:hover {
+  color: #232425;
+}
+
+.tab-switch:checked + .tab-label {
+  color: #39CE8E;
+  border-bottom: 3px solid #39CE8E;
+}
+
 main{
   background-color: #F0F1F3;
   flex: 1;
@@ -77,7 +115,6 @@ main{
   max-width: 756px;
   width: 100%;
   text-align: left;
-  
 }
 
 .main__title{
