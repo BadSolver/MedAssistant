@@ -8,6 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 .wrapper {
   display: flex;
   height: 100vh;
@@ -44,10 +45,11 @@ header {
   border: none;
   background-color: #f0f1f3;
   border-radius: 25px;
-  min-width: 650px;
+  min-width: 600px;
   margin-left: 200px;
   padding: 12px;
 }
+
 
 .search-input::placeholder {
   font-family: 'Montserrat', sans-serif;
@@ -58,14 +60,64 @@ header {
   border: none;
   background-color: transparent;
   position: absolute;
+  top: 25px;
+  right: 290px;
+  cursor: pointer;
 }
+
 
 .search-btn::before {
   content: url(images/search.svg);
 }
 
-main {
-  background-color: #f0f1f3;
+.header__search button::before{
+  content: url(images/search.svg);
+}
+
+.header__search button:hover:before {
+  content: url(images/search_active.svg);
+}
+
+.nav__inner{
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+.tabs{
+  min-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);;
+  grid-template-rows: 50px;
+  justify-content: stretch;
+  justify-items: stretch;
+}
+
+.tab-switch{
+  display: none;
+}
+
+.tab-label {
+  display: block;
+  background: transparent;
+  color: #BFBFC1;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 17px;
+  text-align: center;
+}
+
+.tab-label:hover {
+  color: #232425;
+}
+
+.tab-switch:checked + .tab-label {
+  color: #39CE8E;
+  border-bottom: 3px solid #39CE8E;
+}
+
+main{
+  background-color: #F0F1F3;
   flex: 1;
 }
 
@@ -153,6 +205,11 @@ main {
   justify-content: space-between;
 }
 
+.accordeon-content-open:hover{
+  color: #39CE8E;
+  cursor: pointer;
+}
+
 .accordeon-content-title {
   font-weight: 700;
   font-size: 15px;
@@ -195,7 +252,9 @@ footer {
   height: 220px;
 }
 
-.footer__text {
+
+.footer__text{
+  margin-top: 10px;
   font-size: 13px;
 }
 
