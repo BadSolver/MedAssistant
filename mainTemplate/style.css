@@ -41,41 +41,41 @@ header {
   height: 70px;
 }
 
-.search-input {
-  border: none;
-  background-color: #f0f1f3;
-  border-radius: 25px;
-  min-width: 600px;
-  margin-left: 200px;
-  padding: 12px;
+.header__search {
+    display: flex;
+    align-items: center;
+    max-width: 750px;
+    width: 100%;
+    height: 40px;
+    margin-left: 330px;
+    background: #F0F1F3;
+    border-radius: 25px;
 }
 
+.header__search-input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 12px 17px;
+  outline: none;
+}
 
-.search-input::placeholder {
+.header__search-input::placeholder {
   font-family: 'Montserrat', sans-serif;
   color: #bebebe;
 }
 
-.search-btn {
+.header__search-btn {
+  background: url(./images/search.svg);
+  width: 15px;
+  height: 15px;
   border: none;
-  background-color: transparent;
-  position: absolute;
-  top: 25px;
-  right: 290px;
+  margin: 12.5px 12.5px 12.5px 0;
   cursor: pointer;
 }
 
-
-.search-btn::before {
-  content: url(images/search.svg);
-}
-
-.header__search button::before{
-  content: url(images/search.svg);
-}
-
-.header__search button:hover:before {
-  content: url(images/search_active.svg);
+.header__search-btn:hover {
+  background: url(./images/search_active.svg);
 }
 
 .nav__inner{
@@ -345,7 +345,7 @@ footer {
 
 /* Минимальное разрешение 320px */
 @media screen and (max-width: 319px) {
-  .search-input {
+  .header__search-input {
     min-width: 100%;
     margin-left: 0;
   }
@@ -406,7 +406,7 @@ footer {
 
 /* Разрешение 568px */
 @media screen and (min-width: 320px) and (max-width: 568px) {
-  .search-input {
+  .header__search-input {
     min-width: 100%;
     margin-left: 0;
   }
@@ -473,7 +473,10 @@ footer {
 
 /* Разрешение 720px */
 @media screen and (min-width: 569px) and (max-width: 720px) {
-  .search-input {
+  .header__search {
+    margin-left: 10px;
+  }
+  .header__search-input {
     min-width: 100%;
     margin-left: 0;
   }
@@ -526,7 +529,10 @@ footer {
 
 /* Разрешение 1024px */
 @media screen and (min-width: 721px) and (max-width: 1024px) {
-  .search-input {
+  .header__search {
+    margin-left: 100px;
+  }
+  .header__search-input {
     min-width: 250px;
     margin-left: 0;
   }
@@ -561,7 +567,7 @@ footer {
 
 /* Разрешение 1280px */
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .search-input {
+  .header__search-input {
     min-width: 300px;
     margin-left: 0;
   }
@@ -596,7 +602,7 @@ footer {
 
 /* Разрешение 1440px */
 @media screen and (min-width: 1281px) and (max-width: 1440px) {
-  .search-input {
+  .header__search-input {
     min-width: 350px;
     margin-left: 0;
   }
@@ -631,7 +637,7 @@ footer {
 
 /* Разрешение 1920px и больше */
 @media screen and (min-width: 1441px) {
-  .search-input {
+  .header__search-input {
     min-width: 400px;
     margin-left: 0;
   }
