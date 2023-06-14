@@ -193,6 +193,11 @@ main{
     justify-content: space-between;
 }
 
+.accordeon-content-open:hover{
+  color: #39CE8E;
+  cursor: pointer;
+}
+
 .accordeon-content-title {
     font-weight: 700;
     font-size: 15px;
