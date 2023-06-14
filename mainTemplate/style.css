@@ -8,7 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .wrapper {
   display: flex;
   height: 100vh;
@@ -187,12 +186,11 @@ main{
 }
 
 .accordeon-title {
+  flex: 1;
   align-self: center;
   font-weight: 700;
   font-size: 19px;
   line-height: 23px;
-  margin-right: 137px;
-  width: 450px;
 }
 
 .accordeon-minus {
@@ -251,7 +249,6 @@ footer {
   align-items: center;
   height: 220px;
 }
-
 
 .footer__text{
   margin-top: 10px;
