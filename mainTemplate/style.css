@@ -147,11 +147,6 @@ main{
     cursor: pointer;
 }
 
-.accordeon-header:hover{
-  border: 2px solid #39CE8E; 
-  cursor: url(images/cursor.svg);
-}
-
 .accordeon-header.active {
     display: flex;
     justify-content: space-between;
