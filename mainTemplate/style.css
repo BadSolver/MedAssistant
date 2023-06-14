@@ -42,11 +42,11 @@ header {
 
 .header__search {
     display: flex;
-    align-items: center;
-    max-width: 750px;
+    align-self: center;
+    max-width: 650px;
+    margin-left: 333px;
     width: 100%;
     height: 40px;
-    margin-left: 330px;
     background: #F0F1F3;
     border-radius: 25px;
 }
@@ -85,6 +85,7 @@ header {
 
 .tabs{
   min-width: 1200px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);;
   grid-template-rows: 50px;
@@ -239,7 +240,7 @@ main{
 
 footer {
   background: rgb(57, 206, 142);
-  background: linear-gradient(100deg, rgba(57, 206, 142, 1) 0%, rgba(78, 183, 178, 1) 100%);
+  background: linear-gradient(0deg, rgba(57, 206, 142, 1) 0%, rgba(78, 183, 178, 1) 100%);
   color: #ffffff;
 }
 
@@ -247,7 +248,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 220px;
+  min-height: 220px;
 }
 
 .footer__text{
@@ -375,6 +376,8 @@ footer {
   .footer__links {
     justify-content: center;
     margin-bottom: 15px;
+    padding-top:32px ;
+    margin-bottom: 0;
   }
 
   .footer__link {
@@ -382,32 +385,58 @@ footer {
     font-size: 14px;
   }
 
-  .footer__connect {
-    justify-content: center;
-  }
-
-  .footer__contacts {
-    font-size: 18px;
-  }
-
-  .footer__contacts-link {
-    margin: 0 20px;
-  }
-
   .footer-btn {
-    min-width: 200px;
-    min-height: 36px;
+    min-width: 220px;
+    min-height: 38px;
     font-size: 14px;
   }
+  .footer__col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__text {
+    display: none;
+  }
+  .footer__inner {
+    flex-direction: column;
+  }
+ .footer__connect{
+  flex-direction: column;
+  align-items: center;
+ }
+  .footer__contacts{
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .footer__contacts-link {
+    flex-direction: column;
+    padding-top: 27px;
+  }
+.footer__contacts-link span {
+  padding-top: 8px;
+}
+
+.footer__contacts-btn {
+  padding-top: 27px;
+}
 }
 
 /* Разрешение 568px */
 @media screen and (min-width: 320px) and (max-width: 568px) {
-  .header__search-input {
-    min-width: 100%;
-    margin-left: 0;
+  .header__search {
+    margin-left: 44px;
+    margin-right: 16px;
+    width: 100%;
   }
-
+  .tabs {
+    min-width: 200px;
+    font-size: 9px;
+  }
+  .tab-label {
+    padding-right:0 ;
+    padding-left: 5px;
+  }
   .main__container {
     margin: 25px auto 0 auto;
     max-width: 100%;
@@ -429,7 +458,7 @@ footer {
     height: 68px;
   }
   .accordeon-title {
-    margin: 0 21px 0 0;
+    margin: 0 5px 0 0;
     font-size: 15px;
     width: 132px;
   }
@@ -442,6 +471,8 @@ footer {
   .footer__links {
     justify-content: center;
     margin-bottom: 15px;
+    padding-top:32px ;
+    margin-bottom: 0;
   }
 
   .footer__link {
@@ -449,33 +480,57 @@ footer {
     font-size: 14px;
   }
 
-  .footer__connect {
-    justify-content: center;
-  }
-
-  .footer__contacts {
-    font-size: 18px;
-  }
-
-  .footer__contacts-link {
-    margin: 0 20px;
-  }
-
   .footer-btn {
-    min-width: 200px;
-    min-height: 36px;
+    min-width: 220px;
+    min-height: 38px;
     font-size: 14px;
   }
+  .footer__col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo{
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .footer__text {
+    display: none;
+  }
+  .footer__inner {
+    flex-direction: column;
+  }
+ .footer__connect{
+  flex-direction: column;
+  align-items: center;
+ }
+  .footer__contacts{
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .footer__contacts-link {
+    flex-direction: column;
+    padding-top: 27px;
+  }
+.footer__contacts-link span {
+  padding-top: 8px;
+}
+
+.footer__contacts-btn {
+  padding-top: 27px;
+}
 }
 
 /* Разрешение 720px */
-@media screen and (min-width: 569px) and (max-width: 720px) {
+@media screen and (min-width: 568px) and (max-width: 720px) {
   .header__search {
-    margin-left: 10px;
+    margin-left: 44px;
+    margin-right: 16px;
+    width: 100%;
   }
   .header__search-input {
-    min-width: 100%;
-    margin-left: 0;
+    width: 100%;
   }
 
   .main__container {
@@ -498,10 +553,14 @@ footer {
     margin-right: 120px;
     width: auto;
   }
-
+  .tabs {
+    min-width: 530px;
+  }
   .footer__links {
     justify-content: center;
     margin-bottom: 15px;
+    padding-top:32px ;
+    margin-bottom: 0;
   }
 
   .footer__link {
@@ -509,29 +568,54 @@ footer {
     font-size: 14px;
   }
 
-  .footer__contacts {
-    font-size: 18px;
-  }
-
-  .footer__contacts-link {
-    margin: 0 20px;
-  }
-
   .footer-btn {
     min-width: 220px;
     min-height: 38px;
     font-size: 14px;
   }
+  .footer__col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo{
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .footer__text {
+    display: none;
+  }
+  .footer__inner {
+    flex-direction: column;
+  }
+ .footer__connect{
+  flex-direction: column;
+  align-items: center;
+ }
+  .footer__contacts{
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .footer__contacts-link {
+    flex-direction: column;
+    padding-top: 27px;
+  }
+.footer__contacts-link span {
+  padding-top: 8px;
+}
+
+.footer__contacts-btn {
+  padding-top: 27px;
+}
 }
 
 /* Разрешение 1024px */
 @media screen and (min-width: 721px) and (max-width: 1024px) {
   .header__search {
-    margin-left: 100px;
-  }
-  .header__search-input {
-    min-width: 250px;
-    margin-left: 0;
+    margin-left: 120px;
+    margin-right: 22px;
+    width: 100%;
   }
 
   .main__container {
@@ -559,15 +643,55 @@ footer {
     min-height: 40px;
     font-size: 15px;
   }
+  .tabs {
+    min-width: 700px;
+  }
+  .footer__col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo{
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .footer__text {
+    display: none;
+  }
+  .footer__inner {
+    flex-direction: column;
+  }
+  .footer__links {
+    padding-top:32px ;
+    margin-bottom: 0;
+  }
+ .footer__connect{
+  flex-direction: column;
+  align-items: center;
+ }
+  .footer__contacts{
+    flex-direction: column;
+  }
+  .footer__contacts-link {
+    flex-direction: column;
+    padding-top: 27px;
+  }
+.footer__contacts-link span {
+  padding-top: 8px;
+}
+
+.footer__contacts-btn {
+  padding-top: 27px;
+}
 }
 
 /* Разрешение 1280px */
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .header__search-input {
-    min-width: 300px;
-    margin-left: 0;
-  }
 
+.header__search {
+  margin-left: 200px;
+}
   .main__container {
     margin: 50px auto 0 auto;
     padding: 0 15px;
@@ -592,6 +716,9 @@ footer {
     min-width: 240px;
     min-height: 40px;
     font-size: 15px;
+  }
+  .tabs {
+    min-width: 1024px;
   }
 }
 
@@ -653,7 +780,6 @@ footer {
   }
 
   .accordeon-title {
-    margin-right: 180px;
     width: auto;
   }
 
