@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1;
+    background-color: #F0F1F3;
+}
+.main__container {
+    margin: 31px auto 0 auto;
+    max-width: 756px;
+    width: 100%;
+    text-align: left;
+    overflow-wrap: break-word;
+}
