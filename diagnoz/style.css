@@ -277,8 +277,7 @@ main {
         align-self: flex-start;
         margin: 0 auto;
         max-width: 756px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding:0 20px;
     }
     .main__content {
         margin-left: 0;
@@ -334,4 +333,4 @@ main {
         font-size: 11px;
     }
   }
-  
+ 
