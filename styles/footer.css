@@ -123,6 +123,7 @@ footer {
     .footer__link {
       margin-right: 20px;
       margin-left: 0;
+      padding-left: 0;
     }
     .footer__contacts {
       flex-direction: column;
