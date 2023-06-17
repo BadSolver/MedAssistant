@@ -79,6 +79,7 @@ main {
 
 .main__content {
   padding-left: 75px;
+  max-width: 756px;
 }
 
 .main__content-arrow {
@@ -97,6 +98,7 @@ main {
   justify-content: space-between;
   padding-top: 26px;
   padding-bottom: 20px;
+  padding-right: 10px;
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
@@ -117,7 +119,6 @@ main {
 .main__content-description {
   padding: 21px 132px 0 19px;
   margin-bottom: 119px;
-  max-width: 756px;
   width: 100%;
   background: #FFFFFF;
   border-radius: 5px;
@@ -135,13 +136,13 @@ main {
     padding: 10px 0px;
 }
 
-hr {
+.main__content-description hr {
     border: none; 
     background-color: #EFFAE5; 
     color: #EFFAE5; 
     height: 2px; 
+    max-width: 700px;
     margin: 20px 0;
-    width: 720px;
    }
 
 @media screen and (max-width: 1200px) {

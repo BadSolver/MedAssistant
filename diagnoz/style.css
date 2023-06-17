@@ -52,7 +52,7 @@ main {
     background: #FFFFFF;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 7px;
     border-left: 3px solid #39CE8E;
     border-radius: 3px 0px 0px 3px;
 }
@@ -120,8 +120,16 @@ main {
     font-size: 15px;
     line-height: 18px;
     padding: 16px 61px 15px 20px;
-    border-bottom: 2px solid #EFFAE5;
 }
+
+.main__content-recommend hr {
+    border: none; 
+    background-color: #EFFAE5; 
+    color: #EFFAE5; 
+    height: 2px; 
+    max-width: 700px;
+    margin: 0 15px;
+   }
 
 .main__content-recommend p:last-child{
    border: none;
