@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.modal .modal_content {
+    border-radius: 5px;
+    max-width: 398px;
+    left: 761px;
+    top: 181px;
+    background-color: #EFFAE5;
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    z-index: 99999;
+}
+
+.modal .modal_content .close_modal_window {
+  color: #39CE8E;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.modal_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal_inner-v2 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+/* moduleLvl */
+.skill-equip{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    background: #EFFAE5;
+    padding: 0 20px;
+}
+
+.skill-equip__title{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 130%;
+    color: #39CE8E;
+    margin: 0;
+}
+
+.lvl{
+    display: flex;
+}
+
+.lvl_text{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    margin-top: 5px;
+}
+
+.lvl-check{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #39CE8E;
+    margin: 0 5px 0 0;
+}
+
+.lvl-uncheck{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #39CE8E;
+    margin: 0 5px 0 0;
+}
+
