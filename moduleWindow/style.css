@@ -138,6 +138,7 @@ a {
 
 .main__btn{
     display: flex;
+    flex-direction: column;
 }
 
 .main-btn{
@@ -157,6 +158,22 @@ a {
     background-color: #39CE8E;
   }
 
+.main-btn-v2{
+    color: #fff;
+    border: transparent;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #39CE8E;
+    border-radius: 20px;
+    width: 100%;
+    min-height: 40px;
+    margin: 5px 0;
+}
+
+.main-btn-v2:hover {
+    background-color: #4BDB9D;
+  }
+
   .main__checkbox{
     display: flex;
   }
@@ -171,6 +188,16 @@ a {
     padding-top: 7px;
   }
 
-   .main__checkbox a{
+   .main__checkbox a,
+   .main__link a{
     text-decoration: underline 1px solid black;
+    cursor: pointer;
+  }
+
+  .main__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    line-height: 130%;
   }
