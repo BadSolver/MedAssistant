@@ -179,6 +179,10 @@ main {
    margin-bottom: 100px;
 }
 
+.btn-arrow-up {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
     .main__inner {
         display: flex;
@@ -258,4 +262,17 @@ main {
         font-size: 13px;
         line-height: 130%;
     }
+
+    .btn-arrow-up {
+    display: block;
+    margin-top: 21px;
+    width: 56px;
+    height: 56px;
+    align-self: end;
+    margin-bottom: 5px;
+  }
+
+  .main__nav-text{
+    padding-bottom: 10px;
+  }
 }

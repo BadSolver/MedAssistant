@@ -197,6 +197,9 @@ main {
     height: 56px;
     align-self: end;
   }
+    .main__write-btn {
+    padding-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 524px) {

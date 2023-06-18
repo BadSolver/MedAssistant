@@ -165,14 +165,6 @@ main {
     display: flex;
     flex-direction: column;
   }
-
-  .btn-arrow-up {
-    display: block;
-    margin-top: 21px;
-    width: 56px;
-    height: 56px;
-    align-self: end;
-  }
 }
 
 @media screen and (max-width: 524px) {
@@ -222,6 +214,15 @@ main {
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
+  }
+
+    .btn-arrow-up {
+    display: block;
+    margin-top: 21px;
+    width: 56px;
+    height: 56px;
+    align-self: end;
+    margin-bottom: 5px;
   }
 }
 
