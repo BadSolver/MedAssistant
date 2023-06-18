@@ -26,7 +26,8 @@ main{
 }
 
 .main__container {
-  margin: 31px auto 0 auto;
+  padding: 31px 0 760px 10px;
+  margin: 0 auto;
   max-width: 756px;
   width: 100%;
   text-align: left;
@@ -65,13 +66,24 @@ main{
     line-height: 22px;  
 }
 
-/* @media screen and (max-width: 800px){
+@media screen and (max-width: 800px){
     .main__container{
-        padding: 15px;
+       padding-bottom: 430px;
+    }
+    
+    .main__title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
     }
 
-    .main__btn{
-    margin-top: 15px;
-    margin-bottom: 30px;
+    .main__text {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 130%;
+    }
+
+    .main__text span {
+      font-weight: 700;
+    }
 }
-} */

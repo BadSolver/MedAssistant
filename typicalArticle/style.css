@@ -30,7 +30,6 @@ main {
 
 .main__inner {
   display: flex;
-
 }
 
 .main__write-title {
@@ -58,7 +57,8 @@ main {
 }
 
 .wtite-btn {
-  padding: 10px 96px;
+  padding: 10px 95px;
+  overflow-wrap: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;

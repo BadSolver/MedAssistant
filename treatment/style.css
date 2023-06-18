@@ -212,11 +212,11 @@ main {
     }
 
     .main__content-recommend:last-child{
-   margin-bottom: 45px;
+         margin-bottom: 45px;
 }
   }
   
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 720px) {
     .main__content-title {
         font-weight: 700;
         font-size: 20px;
@@ -235,27 +235,27 @@ main {
 
   @media screen and (max-width: 550px) {
     .main__content-title {
-    font-size: 20px;
-    line-height: 24px;
-}
+        font-size: 20px;
+        line-height: 24px;
+    }
 
-  .main__content-subtitle{
-    font-size: 11px;
-    line-height: 130%;
-}
+    .main__content-subtitle{
+        font-size: 11px;
+        line-height: 130%;
+    }
 
-.recommend__title{
-    font-size: 15px;
-    line-height: 18px;
-}
+    .recommend__title{
+        font-size: 15px;
+        line-height: 18px;  
+    }
 
-.recommend__text{
-    font-size: 11px;
-    line-height: 130%;
-}
+    .recommend__text{
+        font-size: 11px;
+        line-height: 130%;
+    }
 
-.recommend__subtitle{
-    font-size: 13px;
-    line-height: 130%;
-}
+    .recommend__subtitle{
+        font-size: 13px;
+        line-height: 130%;
+    }
 }
