@@ -280,6 +280,10 @@ main {
     border-bottom: none;
 }
 
+.btn-arrow-up {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
     .main__inner {
         display: flex;
@@ -346,5 +350,19 @@ main {
         font-weight: 400;
         font-size: 11px;
     }
+        .main__nav-text {
+        padding-bottom: 20px;
+    }
   }
+
+@media screen and (max-width: 400px){
+  .btn-arrow-up {
+    display: block;
+    margin-top: 21px;
+    width: 56px;
+    height: 56px;
+    align-self: end;
+    margin-bottom: 5px;
+  }
+}
  
