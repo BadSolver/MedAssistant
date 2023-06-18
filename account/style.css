@@ -25,8 +25,13 @@ main{
   flex: 1;
 }
 
+.main__inner {
+  padding-bottom: 138px;
+}
+
 .main__container {
-  margin: 31px auto 0 auto;
+  margin: 0 auto;
+  padding-top: 31px;
   max-width: 756px;
   width: 100%;
   text-align: left;
@@ -106,17 +111,37 @@ main{
     background-color: #39CE8E;
   }
 
-.main__content-recommend:last-child{
+/* .main__content-recommend:last-child{
   margin-bottom: 100px;
-}
+} */
 
 @media screen and (max-width: 800px){
     .main__container{
-        padding: 15px;
+        padding: 27px 15px 0 15px;
     }
 
     .main__btn{
     margin-top: 5px;
     margin-bottom: 10px;
 }
+}
+
+@media screen and (max-width: 568px){
+  .main__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .main__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+  }
+
+  .main__text span {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 130%;
+  }
 }
