@@ -263,6 +263,81 @@ a {
     padding: 10px 25px
   }
 
+  /* share */
+  .modal {
+  color: #000;
+  display: none;
+  position: fixed;
+  z-index: 1;
+}
+
+.modal .share-modal_content {
+    border-radius: 5px;
+    max-width: 300px;
+    max-height: 130px;
+    background-color: #EFFAE5;
+    margin: 25px 350px;
+    padding: 5px 20px;
+    width: 80%;
+    z-index: 99999;
+}
+
+.modal .share-modal_content .close_modal_window {
+  color: #39CE8E;
+  font-size: 40px;
+  cursor: pointer;
+} 
+
+  .content-title-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  background: url(../images/triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.share-modal_title{
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 10px -5px;
+}
+
+.share__title{
+  display: flex;
+  justify-content: space-between;
+}
+
+.share-modal-main__btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.share-main-btn{
+    border: 1px solid #39CE8E;
+    font-weight: 700;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 11px;
+    line-height: 130%;
+    padding: 5px 15px;
+    margin: 5px;
+}
+
+.share-main-btn:hover {
+    color: #39CE8E;
+    background-color: #fff;
+  }
+
+  .share-main-btn img{
+    margin-right: 10px;
+  }
 
 @media screen and (max-width: 568px){
     .modal_content {

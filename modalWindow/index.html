@@ -10,13 +10,33 @@
 
 <body>
   
-
   <button data-modal-btn="moduleLvl">moduleLvl</button>
   <button data-modal-btn="moduleQuestion">moduleQuestion</button>
   <button data-modal-btn="moduleMistake">moduleMistake</button>
   <button data-modal-btn="moduleLogIn">moduleLogIn</button>
   <button data-modal-btn="moduleSignUp">moduleSignUp</button>
   <button data-modal-btn="modulePassword">modulePassword</button>
+
+   <div class="content-title-img" data-modal-btn="share">
+      <img src="../images/circle.svg" alt="circle">
+    </div>
+
+
+ <div data-modal-window="share" class="modal share-modal">
+    <div class="share-modal_content">
+      <div class="share__title">
+        <div class="share-modal_title">Поделиться:</div>
+              <div class="content-title-img" data-modal-btn="share">
+      <img src="../images/circle.svg" alt="circle">
+    </div>
+    </div>
+      
+          <div class="share-modal-main__btn">
+          <button class="share-main-btn"><img src="../images/mail.svg">Отправить по e-mail</button>
+          <button class="share-main-btn"><img src="../images/mail.svg">Копировать ссылку</button>
+        </div>
+    </div>
+  </div>
 
   <div data-modal-window="moduleLvl" class="modal">
     <div class="modal_content">
@@ -175,6 +195,8 @@
       </div>
     </div>
   </div>
+
+ 
 
 
   <script src="index.js"></script>
