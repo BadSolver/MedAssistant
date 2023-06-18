@@ -35,7 +35,7 @@ a {
 
 .modal .modal_content {
     border-radius: 5px;
-    max-width: 350px;
+    max-width: 398px;
     left: 761px;
     top: 181px;
     background-color: #EFFAE5;
@@ -120,8 +120,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 280px;
-    padding: 0 25px ;
+    min-width: 250px;
+    /* padding: 0 25px ; */
+    padding-right: 25px;
 }
 
   .main__change-input {
@@ -215,29 +216,29 @@ a {
     padding: 10px 25px
   }
 
-  @media screen and (max-width: 400px){
-    .modal_title{
-    font-size: 20px;
-}
 
-  .module-main__content {
-    padding: 0;
-    align-items: center;
-}
+@media screen and (max-width: 568px){
+    .modal_content {
+      max-width: 348px;
 
-  .main__change-input {
-    margin-bottom: 10px;
-    width: 90%;
-}
+    }
+    
+    .modal_title {
+      padding: 30px 0 10px 0;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+    }
 
-  .module-main-btn{
-    width: 100%;
-}
-  }
+    .modal_inner {
+      align-items: flex-start;
+    }
 
-  @media screen and (max-width: 370px){
-
-  .module-main__content {
-   min-width: 200px;
-}
+    .close_modal_window {
+      display: flex;
+      align-items: center;
+      height: 35px;
+      width: 35px;
+    }
+    
   }
