@@ -25,3 +25,5 @@ modalMistake.addEventListener("click", (event) => {
     modalMistake.style.display = "none";
   }
 });
+
+

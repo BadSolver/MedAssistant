@@ -24,6 +24,9 @@ main{
   background-color: #F0F1F3;
   flex: 1;
 }
+.modal .main__btn {
+  margin-bottom: 0;
+}
 
 .main__container {
   padding: 31px 0 110px 10px;

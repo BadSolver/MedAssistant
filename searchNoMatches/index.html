@@ -20,15 +20,107 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <div class="header__logo">
-                        <img src="../images/header_logo.svg" alt="logo" class="logo">
+                    <div class="header__auth">
+                        <img src="../images/auth.svg" alt="auth" class="auth modal-open-btn"
+                            data-modal-target="moduleLogIn">
+                    </div>
+                    <div class="modal-windows">
+                        <div data-modal-window="moduleLogIn" class="modal">
+                            <div class="modal_content">
+                                <div class="modal_inner">
+                                    <div class="modal_title">Вход в личный кабинет</div>
+                                    <div class="close_modal_window">&times;</div>
+                                </div>
+                                <div class="main__content">
+                                    <input class="main__change-input" placeholder="E-mail">
+                                    <input class="main__change-input" placeholder="Пароль">
+                                    <div class="main__btn">
+                                        <button class="main-btn-v2 ">Войти</button>
+                                        <button class="main-btn modal-open-btn"
+                                            data-modal-target="moduleSignUp">Регистрация</button>
+                                    </div>
+                                    <div class="main__link">
+                                        <p><a>Забыли пароль</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div data-modal-window="moduleSignUp" class="modal">
+                            <div class="modal_content">
+                                <div class="modal_inner">
+                                    <div class="modal_title">Регистрация</div>
+                                    <div class="close_modal_window">&times;</div>
+                                </div>
+                                <div class="main__content">
+                                    <input class="main__change-input" placeholder="Ваше имя">
+                                    <input class="main__change-input" placeholder="Телефон">
+                                    <input class="main__change-input" placeholder="E-mail">
+                                    <input class="main__change-input" placeholder="Пароль">
+                                    <input class="main__change-input" placeholder="Пароль еще раз">
+                                    <div class="main__btn">
+                                        <button class="main-btn-v2">Зарегистрироваться</button>
+                                    </div>
+                                    <div class="main__link">
+                                        <p><a>Войти по логину</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="header__search">
                         <input type="text" placeholder="Поиск" class="header__search-input">
                         <button class="header__search-btn"></button>
                     </div>
                     <div class="header__auth">
-                        <img src="../images/auth.svg" alt="auth" class="auth">
+                        <img src="../images/auth.svg" alt="auth" class="auth modal-open-btn"
+                            data-modal-target="moduleLogIn">
+                    </div>
+                    <div class="modal-windows">
+                        <div data-modal-window="moduleLogIn" class="modal">
+                            <div class="modal_content">
+                                <div class="modal_inner">
+                                    <div class="modal_title">Вход в личный кабинет</div>
+                                    <div class="close_modal_window">&times;</div>
+                                </div>
+                                <div class="main__content">
+                                    <input class="main__change-input" placeholder="E-mail">
+                                    <input class="main__change-input" placeholder="Пароль">
+                                    <div class="main__btn">
+                                        <button class="main-btn-v2 ">Войти</button>
+                                        <button class="main-btn modal-open-btn"
+                                            data-modal-target="moduleSignUp">Регистрация</button>
+                                    </div>
+                                    <div class="main__link">
+                                        <p><a>Забыли пароль</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div data-modal-window="moduleSignUp" class="modal">
+                            <div class="modal_content">
+                                <div class="modal_inner">
+                                    <div class="modal_title">Регистрация</div>
+                                    <div class="close_modal_window">&times;</div>
+                                </div>
+                                <div class="main__content">
+                                    <input class="main__change-input" placeholder="Ваше имя">
+                                    <input class="main__change-input" placeholder="Телефон">
+                                    <input class="main__change-input" placeholder="E-mail">
+                                    <input class="main__change-input" placeholder="Пароль">
+                                    <input class="main__change-input" placeholder="Пароль еще раз">
+                                    <div class="main__btn">
+                                        <button class="main-btn-v2">Зарегистрироваться</button>
+                                    </div>
+                                    <div class="main__link">
+                                        <p><a>Войти по логину</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,7 +214,7 @@
             </div>
         </footer>
     </div>
-        
+
 </body>
 
 </html>

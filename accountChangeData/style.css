@@ -116,8 +116,8 @@ main{
 }
 
 .main-btn{
-  max-width: 333px;
-  width: 100%;
+    max-width: 333px;
+    width: 100%;
     color: #39CE8E;
     border: 1px solid #39CE8E;
     font-weight: 700;
