@@ -20,6 +20,7 @@ a {
 }
 
 .modal {
+  color: #000;
   display: none;
   position: fixed;
   z-index: 1;
@@ -212,4 +213,18 @@ a {
     font-size: 25px;
     line-height: 30px;
     padding: 10px 25px
+  }
+
+  @media screen and (max-width: 400px){
+    .modal_title{
+    font-size: 20px;
+}
+
+  .main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 220px;
+    padding: 0 25px ;
+}
   }
