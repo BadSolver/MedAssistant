@@ -185,10 +185,51 @@ a {
     display: flex;
   }
 
-  .main__checkbox input{
-    margin-right: 10px;
+  input[type="checkbox"] {
+    display: none;
   }
 
+  label {
+    position: relative;
+    display: flex;
+    align-self: center;
+    padding: 0 11px 10px 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  label:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: #fff;
+  }
+
+  label:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  input[type="checkbox"]:checked + label:after {
+    display: block;
+  }
+
+  label:after {
+    left: 25%; 
+    top: 40%; 
+    width: 7.5px; 
+    height: 11.6px; 
+    border: solid #39CE8E; 
+    border-width: 0 2px 2px 0; 
+    transform: rotate(45deg); 
+  }
+  
   .main__checkbox p{
     font-size: 11px;
     line-height: 130%;
