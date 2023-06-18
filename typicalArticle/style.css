@@ -69,6 +69,10 @@ main {
   cursor: pointer;
 }
 
+.modal .main__content {
+  padding-left: 0;
+}
+
 .btn-arrow-up {
   display: none;
 }
@@ -214,10 +218,11 @@ main {
   }
 
   .wtite-btn {
-    padding: 10px 79px;
+    padding: 10px 78px;
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
   }
 }
+
 

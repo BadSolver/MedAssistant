@@ -66,6 +66,11 @@ main {
     min-height: 40px;
     color: #39CE8E;
     border: 1px solid #39CE8E;
+    cursor: pointer;
+}
+
+.modal .main__content {
+  padding-left: 0;
 }
 
 .wtite-btn:hover{
