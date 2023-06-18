@@ -116,7 +116,7 @@ a {
     padding: 15px 35px ;
 }
 
-  .main__content {
+  .module-main__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -137,12 +137,12 @@ a {
     margin-bottom: 13px;
 }
 
-.main__btn{
+.module-main__btn{
     display: flex;
     flex-direction: column;
 }
 
-.main-btn{
+.module-main-btn{
     color: #39CE8E;
     border: 1px solid #39CE8E;
     font-weight: 700;
@@ -220,11 +220,24 @@ a {
     font-size: 20px;
 }
 
-  .main__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-width: 220px;
-    padding: 0 25px ;
+  .module-main__content {
+    padding: 0;
+    align-items: center;
+}
+
+  .main__change-input {
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+  .module-main-btn{
+    width: 100%;
+}
+  }
+
+  @media screen and (max-width: 370px){
+
+  .module-main__content {
+   min-width: 200px;
 }
   }
