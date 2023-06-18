@@ -20,3 +20,38 @@ window.onclick = function (event) {
     }
   }
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modalButtons = document.querySelectorAll("[data-modal-btn]");
+  const closeButtons = document.querySelectorAll(".close_modal_window");
+  const modals = document.querySelectorAll(".modal");
+
+  modalButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const modalId = button.dataset.modalBtn;
+      const modal = document.querySelector(`[data-modal-window="${modalId}"]`);
+
+      if (modal) {
+        modal.style.display = "block";
+      }
+    });
+  });
+
+  closeButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const modal = button.closest(".modal");
+
+      if (modal) {
+        modal.style.display = "none";
+      }
+    });
+  });
+
+  modals.forEach(modal => {
+    modal.addEventListener("click", event => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  });
+});

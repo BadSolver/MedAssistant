@@ -91,14 +91,14 @@ main{
     line-height: 22px;
 }
 
-  .main__change {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 250px;
+.main__change {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
 }
 
-  .main__change-input {
+  .main__change-input-private {
     margin-bottom: 10px;
     border-radius: 25px;
     width: 100%;
@@ -116,13 +116,15 @@ main{
 }
 
 .main-btn{
+  max-width: 333px;
+  width: 100%;
     color: #39CE8E;
     border: 1px solid #39CE8E;
     font-weight: 700;
     font-size: 15px;
     background-color: transparent;
     border-radius: 20px;
-    min-width: 240px;
+    min-width: 220px;
     min-height: 40px;
 }
 
@@ -170,6 +172,7 @@ main{
     font-size: 13px;
     line-height: 130%;
   }
+
 }
 
 @media screen and (max-width: 400px){

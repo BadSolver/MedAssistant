@@ -259,7 +259,6 @@ main {
   
 .accordeon-content {
     display: none;
-    padding: 10px;
     background: #ffffff;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
@@ -314,7 +313,7 @@ main {
     }
   }
   
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 568px) {
     .main__content-title {
         font-weight: 700;
         font-size: 20px;
@@ -333,6 +332,10 @@ main {
     .description-text {
         font-weight: 400;
         font-size: 11px;
+    }
+
+    .description-desc {
+        margin-left: 0;
     }
     .accordeon-title {
         font-weight: 700;
