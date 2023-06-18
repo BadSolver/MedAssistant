@@ -143,7 +143,7 @@ a {
     flex-direction: column;
 }
 
-.module-main-btn{
+.main-btn{
     color: #39CE8E;
     border: 1px solid #39CE8E;
     font-weight: 700;
@@ -220,7 +220,6 @@ a {
 @media screen and (max-width: 568px){
     .modal_content {
       max-width: 348px;
-
     }
     
     .modal_title {
@@ -240,5 +239,4 @@ a {
       height: 35px;
       width: 35px;
     }
-    
   }
