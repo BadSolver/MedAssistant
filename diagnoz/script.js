@@ -1,7 +1,12 @@
 const accordionHeaders = document.querySelectorAll(".accordeon-header");
 const accordionContents = document.querySelectorAll(".accordeon-content");
 const accordeonTitle = document.querySelectorAll(".accordeon-title");
-console.log(accordeonTitle);
+
+const btnArrowUp = document.querySelector(".btn-arrow-up");
+
+btnArrowUp.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
 accordionHeaders.forEach((accordionHeader, index) => {
   accordionHeader.addEventListener("click", function () {
@@ -15,13 +20,12 @@ accordionHeaders.forEach((accordionHeader, index) => {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const modalButtons = document.querySelectorAll("[data-modal-btn]");
   const closeButtons = document.querySelectorAll(".close_modal_window");
   const modals = document.querySelectorAll(".modal");
 
-  modalButtons.forEach(button => {
+  modalButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const modalId = button.dataset.modalBtn;
       const modal = document.querySelector(`[data-modal-window="${modalId}"]`);
@@ -32,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  closeButtons.forEach(button => {
+  closeButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const modal = button.closest(".modal");
 
@@ -42,8 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  modals.forEach(modal => {
-    modal.addEventListener("click", event => {
+  modals.forEach((modal) => {
+    modal.addEventListener("click", (event) => {
       if (event.target === modal) {
         modal.style.display = "none";
       }

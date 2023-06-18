@@ -1,3 +1,10 @@
+const btnArrowUp = document.querySelector(".btn-arrow-up");
+
+btnArrowUp.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const modalButtons = document.querySelectorAll("[data-modal-btn]");
     const closeButtons = document.querySelectorAll(".close_modal_window");
