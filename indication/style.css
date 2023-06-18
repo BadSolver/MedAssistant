@@ -93,14 +93,32 @@ main {
 }
 
 .main__content-title {
-  display: flex;
-  justify-content: space-between;
-      max-width: 750px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 750px;
     padding-top: 32px;
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
     margin-bottom: 20px;
+}
+
+.main__content-title h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.main__content-title-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+li span{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
 }
 
 .content-title-img {
@@ -168,9 +186,8 @@ main {
     margin-bottom: 20px;
 }
 
-.skill-equip{
+.skill-equip-page{
     display: flex;
-    justify-content: space-around;
     align-items: start;
     max-width: 255px;
     background: #EFFAE5;
@@ -178,7 +195,7 @@ main {
     padding: 5px 0;
 }
 
-.skill-equip__title{
+.skill-equip__title-page{
     font-weight: 700;
     font-size: 11px;
     color: #39CE8E;
@@ -211,6 +228,12 @@ main {
     font-size: 15px;
     margin: 7px 0;
     line-height: 22px;
+}
+
+.content__info_col2 {
+    max-width: 404px;
+    width: 100%;
+    padding-right: 10px;
 }
 
 .content__info_col2 ol{
@@ -284,12 +307,13 @@ margin: 30px 0;
     }
 
     .main__content-description:last-child{
-    margin-bottom: 35px;
+        margin-bottom: 35px;
+    }
 }
-  }
 
-   @media screen and (max-width: 450px) {
+@media screen and (max-width: 630px) {
     .content__info{
+        margin: 0 auto;
         flex-direction: column;
         max-width: 480px;
         justify-content: center;
@@ -297,15 +321,33 @@ margin: 30px 0;
     }
 
     .content__info_col2 {
+        text-align: center;
         padding: 15px;
     }
 
     .description-vet-v2 {
-    padding: 7px 59px;
+        padding: 7px 50px;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 13px;
    }
 
    .info2{
-    display: none;
+        display: none;
    }
+
+   .main__content-title h1{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+   }
+
+   .main__content-title-text{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 130%;
 }
- 
+
+   
+
+}
