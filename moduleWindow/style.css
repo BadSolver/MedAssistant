@@ -34,7 +34,7 @@ a {
 
 .modal .modal_content {
     border-radius: 5px;
-    max-width: 350px;
+    max-width: 398px;
     left: 761px;
     top: 181px;
     background-color: #EFFAE5;
@@ -119,8 +119,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 280px;
-    padding: 0 25px ;
+    min-width: 250px;
+    /* padding: 0 25px ; */
+    padding-right: 25px;
 }
 
   .main__change-input {
@@ -212,4 +213,30 @@ a {
     font-size: 25px;
     line-height: 30px;
     padding: 10px 25px
+  }
+
+  @media screen and (max-width: 568px){
+    .modal_content {
+      max-width: 348px;
+
+    }
+    
+    .modal_title {
+      padding: 30px 0 10px 0;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .modal_inner {
+      align-items: flex-start;
+    }
+
+    .close_modal_window {
+      display: flex;
+      align-items: center;
+      height: 35px;
+      width: 35px;
+    }
+    
   }

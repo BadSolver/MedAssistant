@@ -111,13 +111,9 @@ main{
     background-color: #39CE8E;
   }
 
-/* .main__content-recommend:last-child{
-  margin-bottom: 100px;
-} */
-
 @media screen and (max-width: 800px){
     .main__container{
-        padding: 27px 15px 0 15px;
+        padding: 27px 10px 0 10px;
     }
 
     .main__btn{
