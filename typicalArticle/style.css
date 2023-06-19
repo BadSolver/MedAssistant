@@ -69,6 +69,11 @@ main {
   cursor: pointer;
 }
 
+.wtite-btn:hover {
+  background: #39CE8E;
+  color: #FFFFFF;
+}
+
 .modal .main__content {
   padding-left: 0;
 }
@@ -160,10 +165,11 @@ main {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 720px) {
   .main__write-btn {
     display: flex;
     flex-direction: column;
+    max-width: 313px;
   }
 }
 

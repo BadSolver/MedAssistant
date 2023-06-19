@@ -55,10 +55,9 @@ main {
     height: 52px;
     background: #FFFFFF;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
     margin-bottom: 7px;
     border-left: 3px solid #39CE8E;
-    border-radius: 3px 0px 0px 3px;
+    border-radius: 3px 5px 5px 3px;
 }
 
 .main__nav a {
