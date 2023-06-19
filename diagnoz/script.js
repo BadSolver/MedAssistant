@@ -62,15 +62,11 @@ const modalContainers = document.querySelectorAll(".modal");
 openModalBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const modalTarget = btn.getAttribute("data-modal-target");
-    const modal = document.querySelector(
-      `[data-modal-window="${modalTarget}"]`
-    );
+    const modal = document.querySelector(`[data-modal-window="${modalTarget}"]`);
     modal.style.display = "block";
 
     if (modalTarget === "moduleSignUp") {
-      const loginModal = document.querySelector(
-        '[data-modal-window="moduleLogIn"]'
-      );
+      const loginModal = document.querySelector('[data-modal-window="moduleLogIn"]');
       loginModal.style.display = "none";
     }
   });
@@ -91,17 +87,22 @@ modalContainers.forEach((modal) => {
   });
 });
 
-const loginLink = document.querySelector(
-  '[data-modal-window="moduleSignUp"] .main__link a'
-);
+const loginLink = document.querySelector('[data-modal-window="moduleSignUp"] .main__link a');
 loginLink.addEventListener("click", () => {
-  const signUpModal = document.querySelector(
-    '[data-modal-window="moduleSignUp"]'
-  );
+  const signUpModal = document.querySelector('[data-modal-window="moduleSignUp"]');
   signUpModal.style.display = "none";
 
-  const loginModal = document.querySelector(
-    '[data-modal-window="moduleLogIn"]'
-  );
+  const loginModal = document.querySelector('[data-modal-window="moduleLogIn"]');
   loginModal.style.display = "block";
+});
+
+const forgotPasswordLink = document.querySelector('[data-modal-window="moduleLogIn"] .main__link a');
+forgotPasswordLink.addEventListener("click", () => {
+  const openModals = document.querySelectorAll('.modal');
+  openModals.forEach((modal) => {
+    modal.style.display = 'none';
+  });
+
+  const passwordModal = document.querySelector('[data-modal-window="modulePassword"]');
+  passwordModal.style.display = 'block';
 });

@@ -80,6 +80,10 @@ main{
     padding: 20px;
 }
 
+.main__content-recommend .main-btn {
+  max-width: 250px;
+}
+
 .recommend__text span{
     font-weight: 700;
     font-size: 15px;
@@ -106,9 +110,14 @@ main{
     background: #F0F1F3;
     padding: 12px 17px;
     outline: none;
+    
+}
+
+input::placeholder {
     font-weight: 700;
     font-size: 13px;
     line-height: 16px;
+    color: #232425;
 }
 
 .main__btn{

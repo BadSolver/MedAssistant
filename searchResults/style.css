@@ -131,13 +131,19 @@ main{
     min-height: 40px;
 }
 
+.main-btn-more:hover {
+    background: #39CE8E;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
 .main-btn:hover {
     color: #fff;
     background-color: #39CE8E;
   }
 
   .btn-arrow-up {
-  display: none;
+    display: none;
 }
 
 @media screen and (max-width: 800px){

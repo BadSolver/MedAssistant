@@ -55,10 +55,9 @@ main {
     height: 52px;
     background: #FFFFFF;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
     margin-bottom: 7px;
     border-left: 3px solid #39CE8E;
-    border-radius: 3px 0px 0px 3px;
+    border-radius: 3px 5px 5px 3px;
 }
 
 .main__nav a {
@@ -183,9 +182,15 @@ main {
     line-height: 150%;
 }
 
+.description-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    max-width: 280px;
+}
+
 .description-vet {
     margin-left: 14px;
-    margin-bottom: 20px;
     padding: 7px 17px;
     font-weight: 700;
     font-size: 13px;
@@ -194,16 +199,18 @@ main {
     background: #39CE8E;
     border-radius: 15px;
     cursor: pointer;
-    border: none;
+    border: 1px solid transparent;
 }
 
 .description-vet:hover{
-    background-color: #4BDB9D;
+    background-color:#FFFFFF;
+    color: #39CE8E;
+    border: 1px solid #39CE8E;
 }
 
 .description-desc {
     padding: 7px 17px;
-    margin-left: 14px;
+    margin-right: 14px;
     font-style: normal;
     font-weight: 700;
     font-size: 13px;
@@ -212,6 +219,12 @@ main {
     border: 1px solid #39CE8E;
     border-radius: 15px;
     background: #FFFFFF;
+}
+
+.description-desc:hover {
+    background: #39CE8E;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 .main__accordeon {
@@ -327,35 +340,54 @@ main {
         font-size: 20px;
         line-height: 24px;
     }
+    
     .main__content-subtitle {
         font-weight: 700;
         font-size: 15px;
         line-height: 18px;
     }
+    
     .description-title {
         font-weight: 700;
         font-size: 15px;
         line-height: 18px;
     }
+    
     .description-text {
         font-weight: 400;
         font-size: 11px;
     }
 
+    
     .description-desc {
         margin-left: 0;
     }
+    
     .accordeon-title {
         font-weight: 700;
         font-size: 15px;
         line-height: 18px;
     }
+
     .main__nav-text {
         font-weight: 400;
         font-size: 11px;
     }
-        .main__nav-text {
+    
+    .main__nav-text {
         padding-bottom: 20px;
+    }
+    
+    .description-vet {
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .description-desc {
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 13px;
     }
   }
 
