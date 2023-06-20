@@ -102,7 +102,7 @@ main{
     width: 250px;
 }
 
-  .main__change-input-private {
+.main__change-input-private {
     margin-bottom: 10px;
     border-radius: 25px;
     width: 100%;
@@ -113,7 +113,7 @@ main{
     
 }
 
-input::placeholder {
+.main__change-input-private::placeholder {
     font-weight: 700;
     font-size: 13px;
     line-height: 16px;

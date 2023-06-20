@@ -14,9 +14,9 @@ accordionHeaders.forEach((accordionHeader, index) => {
     accordionHeader.classList.toggle("active");
     accordeonTitle[index].classList.toggle("active");
     const accordionIcon = accordionHeader.querySelector(".accordeon-minus img");
-    accordionContents[index].classList.contains("active")
-      ? (accordionIcon.src = "../images/accordeon-minus.svg")
-      : (accordionIcon.src = "../images/accordeon-plus-white.svg");
+    accordionIcon.src = accordionContents[index].classList.contains("active")
+      ? "../images/accordeon-minus.svg"
+      : "../images/accordeon-plus-white.svg";
   });
 });
 
@@ -62,7 +62,13 @@ const modalContainers = document.querySelectorAll(".modal");
 openModalBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const modalTarget = btn.getAttribute("data-modal-target");
+<<<<<<< Updated upstream
     const modal = document.querySelector(`[data-modal-window="${modalTarget}"]`);
+=======
+    const modal = document.querySelector(
+      `[data-modal-window="${modalTarget}"]`
+    );
+>>>>>>> Stashed changes
     modal.style.display = "block";
 
     if (modalTarget === "moduleSignUp") {
@@ -89,10 +95,21 @@ modalContainers.forEach((modal) => {
 
 const loginLink = document.querySelector('[data-modal-window="moduleSignUp"] .main__link a');
 loginLink.addEventListener("click", () => {
+<<<<<<< Updated upstream
   const signUpModal = document.querySelector('[data-modal-window="moduleSignUp"]');
   signUpModal.style.display = "none";
 
   const loginModal = document.querySelector('[data-modal-window="moduleLogIn"]');
+=======
+  const signUpModal = document.querySelector(
+    '[data-modal-window="moduleSignUp"]'
+  );
+  const loginModal = document.querySelector(
+    '[data-modal-window="moduleLogIn"]'
+  );
+
+  signUpModal.style.display = "none";
+>>>>>>> Stashed changes
   loginModal.style.display = "block";
 });
 
