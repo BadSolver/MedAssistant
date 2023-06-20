@@ -198,6 +198,18 @@ li span{
     padding: 5px 0;
 }
 
+.skill-equip__skill{
+    padding-bottom: 25px;
+}
+
+.skill-equip__title{
+    padding-bottom: 20px;
+}
+
+.lvl_text{
+    padding-bottom: 10px;
+}
+
 .skill-equip__title-page{
     font-weight: 700;
     font-size: 11px;
