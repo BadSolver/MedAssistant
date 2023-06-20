@@ -28,6 +28,9 @@ const openModalShare = document.querySelectorAll("[data-modal-btn='share']");
 const shareModalWindow = document.querySelectorAll(
   "[data-modal-window='share']"
 );
+const closeShareModalBtn = document.querySelectorAll(
+  "[data-modal-btn='close-share']"
+);
 
 openModalShare.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -40,6 +43,14 @@ openModalShare.forEach((btn) => {
       modalWindow.style.top = `${btnCenterY}px`;
       modalWindow.style.display = "block";
       modalWindow.style.backgroundColor = "transparent";
+    });
+  });
+});
+
+closeShareModalBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    shareModalWindow.forEach((modal) => {
+      closeModal(modal);
     });
   });
 });

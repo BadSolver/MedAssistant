@@ -10,7 +10,7 @@ function closeModal(modal) {
 
 // Функция закрытия модальных окон по клику вне модального окна
 function closeModalOnOutsideClick(modal) {
-  window.addEventListener("click", function (event) {
+  document.addEventListener("click", function (event) {
     if (event.target === modal) {
       closeModal(modal);
     }
@@ -98,6 +98,9 @@ const openModalShare = document.querySelectorAll("[data-modal-btn='share']");
 const shareModalWindow = document.querySelectorAll(
   "[data-modal-window='share']"
 );
+const closeShareModalBtn = document.querySelectorAll(
+  "[data-modal-btn='close-share']"
+);
 
 openModalShare.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -110,6 +113,14 @@ openModalShare.forEach((btn) => {
       modalWindow.style.top = `${btnCenterY}px`;
       modalWindow.style.display = "block";
       modalWindow.style.backgroundColor = "transparent";
+    });
+  });
+});
+
+closeShareModalBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    shareModalWindow.forEach((modal) => {
+      closeModal(modal);
     });
   });
 });
@@ -130,6 +141,13 @@ modalContainers.forEach((modal) => {
 });
 
 let lastScrollPosition = window.pageYOffset;
+
+closeModalBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const modal = btn.closest(".modal");
+    closeModal(modal);
+  });
+});
 
 window.addEventListener("scroll", () => {
   const currentScrollPosition = window.pageYOffset;
