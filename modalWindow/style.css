@@ -377,7 +377,7 @@ line-height: 24px;
 line-height: 24px;
 }
   }
-  @media screen and (max-width: 568px) {
+  @media screen and (max-width: 358px) {
     .modal .share-modal_content {
       margin-right: 0;
       margin-left: 45px;

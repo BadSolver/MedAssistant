@@ -94,6 +94,28 @@ forgotPasswordLink.addEventListener("click", () => {
   openModal(passwordModal);
 });
 
+const openModalShare = document.querySelectorAll("[data-modal-btn='share']");
+const shareModalWindow = document.querySelectorAll(
+  "[data-modal-window='share']"
+);
+console.log(openModalShare)
+console.log(shareModalWindow)
+
+openModalShare.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    shareModalWindow.forEach((modalWindow) => {
+      const btnRect = btn.getBoundingClientRect();
+      const btnCenterX = btnRect.left + btnRect.width -280;
+      const btnCenterY = btnRect.top + btnRect.height -45;
+
+      modalWindow.style.left = `${btnCenterX}px`;
+      modalWindow.style.top = `${btnCenterY}px`;
+      modalWindow.style.display = "block";
+      modalWindow.style.backgroundColor = "transparent";
+    });
+  });
+});
+
 closeModalBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const modal = btn.closest(".modal");
@@ -108,3 +130,4 @@ modalContainers.forEach((modal) => {
     }
   });
 });
+
