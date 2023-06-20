@@ -10,7 +10,7 @@ function closeModal(modal) {
 
 // Функция закрытия модальных окон по клику вне модального окна
 function closeModalOnOutsideClick(modal) {
-  window.addEventListener("click", function(event) {
+  window.addEventListener("click", function (event) {
     if (event.target === modal) {
       closeModal(modal);
     }
@@ -22,6 +22,26 @@ const btnArrowUp = document.querySelector(".btn-arrow-up");
 
 btnArrowUp.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+const openModalShare = document.querySelectorAll("[data-modal-btn='share']");
+const shareModalWindow = document.querySelectorAll(
+  "[data-modal-window='share']"
+);
+
+openModalShare.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    shareModalWindow.forEach((modalWindow) => {
+      const btnRect = btn.getBoundingClientRect();
+      const btnCenterX = btnRect.left + btnRect.width - 280;
+      const btnCenterY = btnRect.top + btnRect.height - 45;
+
+      modalWindow.style.left = `${btnCenterX}px`;
+      modalWindow.style.top = `${btnCenterY}px`;
+      modalWindow.style.display = "block";
+      modalWindow.style.backgroundColor = "transparent";
+    });
+  });
 });
 
 // Modal window question
@@ -46,30 +66,44 @@ const openModalAuthBtns = document.querySelectorAll(".modal-open-btn");
 openModalAuthBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const modalTarget = btn.getAttribute("data-modal-target");
-    const modal = document.querySelector(`[data-modal-window="${modalTarget}"]`);
+    const modal = document.querySelector(
+      `[data-modal-window="${modalTarget}"]`
+    );
 
     openModal(modal);
 
     if (modalTarget === "moduleSignUp") {
-      const loginModal = document.querySelector('[data-modal-window="moduleLogIn"]');
+      const loginModal = document.querySelector(
+        '[data-modal-window="moduleLogIn"]'
+      );
       closeModal(loginModal);
     }
   });
 });
 
-const loginLink = document.querySelector('[data-modal-window="moduleSignUp"] .main__link a');
+const loginLink = document.querySelector(
+  '[data-modal-window="moduleSignUp"] .main__link a'
+);
 loginLink.addEventListener("click", () => {
-  const signUpModal = document.querySelector('[data-modal-window="moduleSignUp"]');
-  const loginModal = document.querySelector('[data-modal-window="moduleLogIn"]');
+  const signUpModal = document.querySelector(
+    '[data-modal-window="moduleSignUp"]'
+  );
+  const loginModal = document.querySelector(
+    '[data-modal-window="moduleLogIn"]'
+  );
 
   closeModal(signUpModal);
   openModal(loginModal);
 });
 
-const forgotPasswordLink = document.querySelector('[data-modal-window="moduleLogIn"] .main__link a');
+const forgotPasswordLink = document.querySelector(
+  '[data-modal-window="moduleLogIn"] .main__link a'
+);
 forgotPasswordLink.addEventListener("click", () => {
-  const openModals = document.querySelectorAll('.modal');
-  const passwordModal = document.querySelector('[data-modal-window="modulePassword"]');
+  const openModals = document.querySelectorAll(".modal");
+  const passwordModal = document.querySelector(
+    '[data-modal-window="modulePassword"]'
+  );
 
   openModals.forEach((modal) => {
     closeModal(modal);

@@ -24,6 +24,26 @@ btnArrowUp.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+const openModalShare = document.querySelectorAll("[data-modal-btn='share']");
+const shareModalWindow = document.querySelectorAll(
+  "[data-modal-window='share']"
+);
+
+openModalShare.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    shareModalWindow.forEach((modalWindow) => {
+      const btnRect = btn.getBoundingClientRect();
+      const btnCenterX = btnRect.left + btnRect.width - 280;
+      const btnCenterY = btnRect.top + btnRect.height - 45;
+
+      modalWindow.style.left = `${btnCenterX}px`;
+      modalWindow.style.top = `${btnCenterY}px`;
+      modalWindow.style.display = "block";
+      modalWindow.style.backgroundColor = "transparent";
+    });
+  });
+});
+
 const openModalAuthBtns = document.querySelectorAll(".modal-open-btn");
 const closeModalBtns = document.querySelectorAll(".close_modal_window");
 const modalContainers = document.querySelectorAll(".modal");
@@ -76,7 +96,6 @@ forgotPasswordLink.addEventListener("click", () => {
   passwordModal.style.display = "block";
 });
 
-
 closeModalBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const modal = btn.closest(".modal");
@@ -122,5 +141,3 @@ openModalLvlBtn.forEach((btn) => {
     modalWindowLvl.forEach((modal) => (modal.style.display = "block"));
   });
 });
-
-

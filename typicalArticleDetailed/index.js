@@ -98,8 +98,6 @@ const openModalShare = document.querySelectorAll("[data-modal-btn='share']");
 const shareModalWindow = document.querySelectorAll(
   "[data-modal-window='share']"
 );
-console.log(openModalShare)
-console.log(shareModalWindow)
 
 openModalShare.forEach((btn) => {
   btn.addEventListener("click", () => {
