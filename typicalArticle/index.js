@@ -1,21 +1,21 @@
 // Функция открытия модального окна
-function openModal(modal) {
+const openModal = (modal) => {
   modal.style.display = "block";
-}
+};
 
 // Функция закрытия модального окна
-function closeModal(modal) {
+const closeModal = (modal) => {
   modal.style.display = "none";
-}
+};
 
 // Функция закрытия модальных окон по клику вне модального окна
-function closeModalOnOutsideClick(modal) {
-  document.addEventListener("click", function (event) {
+const closeModalOnOutsideClick = (modal) => {
+  document.addEventListener("click", (event) => {
     if (event.target === modal) {
       closeModal(modal);
     }
   });
-}
+};
 
 // Scroll to top
 const btnArrowUp = document.querySelector(".btn-arrow-up");
@@ -140,7 +140,7 @@ modalContainers.forEach((modal) => {
   });
 });
 
-let lastScrollPosition = window.pageYOffset;
+const lastScrollPosition = window.scrollY;
 
 closeModalBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -150,7 +150,7 @@ closeModalBtns.forEach((btn) => {
 });
 
 window.addEventListener("scroll", () => {
-  const currentScrollPosition = window.pageYOffset;
+  const currentScrollPosition = window.scrollY;
 
   if (currentScrollPosition !== lastScrollPosition) {
     const openModals = document.querySelectorAll("[data-modal-window='share']");

@@ -1,24 +1,22 @@
-let btns = document.querySelectorAll("*[data-modal-btn]");
+const btns = document.querySelectorAll("*[data-modal-btn]");
 
-for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    let name = btns[i].getAttribute("data-modal-btn");
-    let modal = document.querySelector("[data-modal-window='" + name + "']");
+btns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const name = btn.getAttribute("data-modal-btn");
+    const modal = document.querySelector(`[data-modal-window="${name}"]`);
     modal.style.display = "block";
-    let close = modal.querySelector(".close_modal_window");
-    close.addEventListener("click", function () {
+    const close = modal.querySelector(".close_modal_window");
+    close.addEventListener("click", () => {
       modal.style.display = "none";
     });
   });
-}
+});
 
-window.onclick = function (event) {
+window.onclick = (event) => {
   if (event.target.hasAttribute("data-modal-window")) {
-    let modals = document.querySelectorAll("*[data-modal-window]");
-    for (let i = 0; i < modals.length; i++) {
-      modals[i].style.display = "none";
-    }
+    const modals = document.querySelectorAll("*[data-modal-window]");
+    modals.forEach((modal) => {
+      modal.style.display = "none";
+    });
   }
 };
-
-

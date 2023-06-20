@@ -9,7 +9,7 @@ btnArrowUp.addEventListener("click", () => {
 });
 
 accordionHeaders.forEach((accordionHeader, index) => {
-  accordionHeader.addEventListener("click", function () {
+  accordionHeader.addEventListener("click", () => {
     accordionContents[index].classList.toggle("active");
     accordionHeader.classList.toggle("active");
     accordeonTitle[index].classList.toggle("active");

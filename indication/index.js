@@ -1,21 +1,21 @@
 // Функция открытия модального окна
-function openModal(modal) {
+const openModal = (modal) => {
   modal.style.display = "block";
-}
+};
 
 // Функция закрытия модального окна
-function closeModal(modal) {
+const closeModal = (modal) => {
   modal.style.display = "none";
-}
+};
 
 // Функция закрытия модальных окон по клику вне модального окна
-function closeModalOnOutsideClick(modal) {
-  window.addEventListener("click", function (event) {
+const closeModalOnOutsideClick = (modal) => {
+  window.addEventListener("click", (event) => {
     if (event.target === modal) {
       closeModal(modal);
     }
   });
-}
+};
 
 // Scroll to top
 const btnArrowUp = document.querySelector(".btn-arrow-up");
@@ -129,11 +129,11 @@ const modalWindow = document.querySelector(
   "[data-modal-window='moduleQuestion']"
 );
 
-openModalQustionBtn.addEventListener("click", function () {
+openModalQustionBtn.addEventListener("click", () => {
   modalWindow.style.display = "block";
 });
 
-window.addEventListener("click", function (event) {
+window.addEventListener("click", (event) => {
   if (event.target === modalWindow) {
     modalWindow.style.display = "none";
   }
@@ -149,14 +149,16 @@ const modalWindowLvl = document.querySelectorAll(
 openModalLvlBtn.forEach((btn) => {
   btn.addEventListener("click", () => {
     console.log(123);
-    modalWindowLvl.forEach((modal) => (modal.style.display = "block"));
+    modalWindowLvl.forEach((modal) => {
+      modal.style.display = "block";
+    });
   });
 });
 
-let lastScrollPosition = window.pageYOffset;
+const lastScrollPosition = window.scrollY;
 
 window.addEventListener("scroll", () => {
-  const currentScrollPosition = window.pageYOffset;
+  const currentScrollPosition = window.scrollY;
 
   if (currentScrollPosition !== lastScrollPosition) {
     const openModals = document.querySelectorAll("[data-modal-window='share']");

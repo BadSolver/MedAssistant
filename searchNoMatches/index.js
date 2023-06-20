@@ -1,21 +1,21 @@
 // Функция открытия модального окна
-function openModal(modal) {
+const openModal = (modal) => {
   modal.style.display = "block";
-}
+};
 
 // Функция закрытия модального окна
-function closeModal(modal) {
+const closeModal = (modal) => {
   modal.style.display = "none";
-}
+};
 
 // Функция закрытия модальных окон по клику вне модального окна
-function closeModalOnOutsideClick(modal) {
-  window.addEventListener("click", function (event) {
+const closeModalOnOutsideClick = (modal) => {
+  window.addEventListener("click", (event) => {
     if (event.target === modal) {
       closeModal(modal);
     }
   });
-}
+};
 
 // Modal window question
 const openModalQuestionBtns = document.querySelectorAll(
