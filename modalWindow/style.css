@@ -342,6 +342,26 @@ a {
     margin: 5px;
 }
 
+.mail{
+  background: url(../images/mail.svg) no-repeat;
+  background-position: 7px;
+}
+
+.copy{
+  background: url(../images/modal-share-chain.svg) no-repeat;
+  background-position: 7px;
+}
+
+.mail:hover{
+  background: url(../images/modal-share-mail-green.svg) no-repeat;
+  background-position: 7px;
+}
+
+.copy:hover{
+  background: url(../images/modal-share-chain-green.svg) no-repeat;
+  background-position: 7px;
+}
+
 .share-main-btn:hover {
     color: #39CE8E;
     background-color: #fff;
