@@ -55,16 +55,7 @@ main{
   margin-bottom: 15px;
 }
 
-.main__text {
-  font-style: normal;
-  font-size: 15px;
-  line-height: 22px;
-  margin-bottom: 22px;
-  margin-bottom: 20px;
-}
-
 .main__text span{
-    font-weight: 700;
     font-size: 15px;
     line-height: 22px;  
 }
