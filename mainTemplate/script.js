@@ -17,33 +17,35 @@ function closeModalOnOutsideClick(modal) {
   });
 }
 
-// Accordion
-const accordionHeaders = document.querySelectorAll(".accordeon-header");
-const accordionContents = document.querySelectorAll(".accordeon-content");
+// Modal window question
+const openModalQuestionBtns = document.querySelectorAll(
+  "[data-modal-btn='moduleQuestion']"
+);
+const modalQuestions = document.querySelectorAll(
+  "[data-modal-window='moduleQuestion']"
+);
 
-accordionHeaders.forEach((accordionHeader, index) => {
-  accordionHeader.addEventListener("click", function () {
-    accordionContents[index].classList.toggle("active");
-    accordionHeader.classList.toggle("active");
-    const accordionIcon = accordionHeader.querySelector(".accordeon-minus img");
-    accordionIcon.src = accordionContents[index].classList.contains("active")
-      ? "../images/accordeon-minus.svg"
-      : "../images/accordeon-plus.svg";
+openModalQuestionBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modalQuestions.forEach((modal) => {
+      openModal(modal);
+    });
   });
 });
 
-// Modal windows
+// Modal window authentication
 const openModalAuthBtns = document.querySelectorAll(".modal-open-btn");
 const closeModalBtns = document.querySelectorAll(".close_modal_window");
 const modalContainers = document.querySelectorAll(".modal");
 
-openModalBtns.forEach((btn) => {
+openModalAuthBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const modalTarget = btn.getAttribute("data-modal-target");
     const modal = document.querySelector(
       `[data-modal-window="${modalTarget}"]`
     );
-    modal.style.display = "block";
+
+    openModal(modal);
 
     if (modalTarget === "moduleSignUp") {
       const loginModal = document.querySelector(
@@ -99,16 +101,3 @@ modalContainers.forEach((modal) => {
     }
   });
 });
-
-const openModalQuestionBtn = document.querySelector(
-  "[data-modal-btn='moduleQuestion']"
-);
-const modalWindow = document.querySelector(
-  "[data-modal-window='moduleQuestion']"
-);
-
-openModalQuestionBtn.addEventListener("click", function () {
-  openModal(modalWindow);
-});
-
-closeModalOnOutsideClick(modalWindow);
