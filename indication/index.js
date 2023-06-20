@@ -1,3 +1,23 @@
+// Функция открытия модального окна
+function openModal(modal) {
+  modal.style.display = "block";
+}
+
+// Функция закрытия модального окна
+function closeModal(modal) {
+  modal.style.display = "none";
+}
+
+// Функция закрытия модальных окон по клику вне модального окна
+function closeModalOnOutsideClick(modal) {
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      closeModal(modal);
+    }
+  });
+}
+
+// Scroll to top
 const btnArrowUp = document.querySelector(".btn-arrow-up");
 
 btnArrowUp.addEventListener("click", () => {
@@ -60,14 +80,14 @@ forgotPasswordLink.addEventListener("click", () => {
 closeModalBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const modal = btn.closest(".modal");
-    modal.style.display = "none";
+    closeModal(modal);
   });
 });
 
 modalContainers.forEach((modal) => {
   modal.addEventListener("click", (event) => {
     if (event.target === modal) {
-      modal.style.display = "none";
+      closeModal(modal);
     }
   });
 });

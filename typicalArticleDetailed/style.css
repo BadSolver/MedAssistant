@@ -182,6 +182,9 @@ main {
   .main__write-btn {
     padding-bottom: 70px;
   }
+  .wtite-btn {
+    max-width: 313px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
