@@ -62,13 +62,9 @@ const modalContainers = document.querySelectorAll(".modal");
 openModalBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const modalTarget = btn.getAttribute("data-modal-target");
-<<<<<<< Updated upstream
-    const modal = document.querySelector(`[data-modal-window="${modalTarget}"]`);
-=======
     const modal = document.querySelector(
       `[data-modal-window="${modalTarget}"]`
     );
->>>>>>> Stashed changes
     modal.style.display = "block";
 
     if (modalTarget === "moduleSignUp") {
@@ -95,12 +91,6 @@ modalContainers.forEach((modal) => {
 
 const loginLink = document.querySelector('[data-modal-window="moduleSignUp"] .main__link a');
 loginLink.addEventListener("click", () => {
-<<<<<<< Updated upstream
-  const signUpModal = document.querySelector('[data-modal-window="moduleSignUp"]');
-  signUpModal.style.display = "none";
-
-  const loginModal = document.querySelector('[data-modal-window="moduleLogIn"]');
-=======
   const signUpModal = document.querySelector(
     '[data-modal-window="moduleSignUp"]'
   );
@@ -109,7 +99,6 @@ loginLink.addEventListener("click", () => {
   );
 
   signUpModal.style.display = "none";
->>>>>>> Stashed changes
   loginModal.style.display = "block";
 });
 
