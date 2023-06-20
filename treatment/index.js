@@ -129,3 +129,18 @@ modalContainers.forEach((modal) => {
     }
   });
 });
+
+let lastScrollPosition = window.pageYOffset;
+
+window.addEventListener("scroll", () => {
+  const currentScrollPosition = window.pageYOffset;
+
+  if (currentScrollPosition !== lastScrollPosition) {
+    const openModals = document.querySelectorAll("[data-modal-window='share']");
+    openModals.forEach((modal) => {
+      closeModal(modal);
+    });
+  }
+
+  lastScrollPosition = currentScrollPosition;
+});

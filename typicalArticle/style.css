@@ -131,6 +131,10 @@ main {
   line-height: 150%;
 }
 
+.main__content .main__content-arrow p{
+  padding-bottom: 0;
+}
+
 @media screen and (max-width: 1200px) {
   .main__inner {
       display: flex;

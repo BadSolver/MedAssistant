@@ -103,8 +103,8 @@ openModalShare.forEach((btn) => {
   btn.addEventListener("click", () => {
     shareModalWindow.forEach((modalWindow) => {
       const btnRect = btn.getBoundingClientRect();
-      const btnCenterX = btnRect.left + btnRect.width -280;
-      const btnCenterY = btnRect.top + btnRect.height -45;
+      const btnCenterX = btnRect.left + btnRect.width - 280;
+      const btnCenterY = btnRect.top + btnRect.height - 45;
 
       modalWindow.style.left = `${btnCenterX}px`;
       modalWindow.style.top = `${btnCenterY}px`;
@@ -129,3 +129,17 @@ modalContainers.forEach((modal) => {
   });
 });
 
+let lastScrollPosition = window.pageYOffset;
+
+window.addEventListener("scroll", () => {
+  const currentScrollPosition = window.pageYOffset;
+
+  if (currentScrollPosition !== lastScrollPosition) {
+    const openModals = document.querySelectorAll("[data-modal-window='share']");
+    openModals.forEach((modal) => {
+      closeModal(modal);
+    });
+  }
+
+  lastScrollPosition = currentScrollPosition;
+});
