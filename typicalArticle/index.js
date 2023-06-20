@@ -44,6 +44,7 @@ openModalQuestionBtns.forEach((btn) => {
 const openModalAuthBtns = document.querySelectorAll(".modal-open-btn");
 const closeModalBtns = document.querySelectorAll(".close_modal_window");
 const modalContainers = document.querySelectorAll(".modal");
+console.log(modalContainers);
 
 openModalAuthBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -92,6 +93,28 @@ forgotPasswordLink.addEventListener("click", () => {
   });
 
   openModal(passwordModal);
+});
+
+const openModalShare = document.querySelectorAll("[data-modal-btn='share']");
+const shareModalWindow = document.querySelectorAll(
+  "[data-modal-window='share']"
+);
+
+openModalShare.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    shareModalWindow.forEach((modalWindow) => {
+      const btnRect = btn.getBoundingClientRect();
+      const btnCenterX = btnRect.left + btnRect.width -280;
+      const btnCenterY = btnRect.top + btnRect.height -45;
+      console.log(btnCenterX)
+      console.log(btnCenterY)
+
+      modalWindow.style.left = `${btnCenterX}px`;
+      modalWindow.style.top = `${btnCenterY}px`;
+      modalWindow.style.display = "block";
+      modalWindow.style.backgroundColor = "transparent";
+    });
+  });
 });
 
 closeModalBtns.forEach((btn) => {
