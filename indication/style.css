@@ -379,4 +379,14 @@ margin: 30px 0;
 .main__nav-text{
     padding-bottom: 10px;
 }
+
+.skill-equip__title{
+    padding-bottom: 20px;
+    font-size: 13px;
+}
+
+.lvl_text{
+    padding-bottom: 10px;
+    font-size: 11px;
+}
 }

@@ -69,6 +69,10 @@ a {
   justify-content: end;
 }
 
+.main__content p{
+  padding-bottom: 10px;
+}
+
 /* moduleLvl */
 .skill-equip{
     display: flex;
@@ -358,7 +362,13 @@ a {
       align-items: flex-start;
     }
 
-    .close_modal_window {
-      
-    } 
+.modal_title{
+  font-size: 20px;
+line-height: 24px;
+}
+
+.modal_title-password{
+    font-size: 20px;
+line-height: 24px;
+}
   }
