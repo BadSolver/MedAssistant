@@ -109,7 +109,7 @@ window.addEventListener("scroll", () => {
 //   });
 // });
 
-// accordeon
+// accordeon main template
 const accordionHeaders = document.querySelectorAll(".mt__accordeon-header");
 const accordionContents = document.querySelectorAll(".mt__accordeon-content");
 const accordeonTitle = document.querySelectorAll(".mt__accordeon-title");
