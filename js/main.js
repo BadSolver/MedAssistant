@@ -92,17 +92,34 @@ window.addEventListener("scroll", () => {
   lastScrollPosition = currentScrollPosition;
 });
 
+// // accordeon
+// const accordionHeaders = document.querySelectorAll(".accordeon-header");
+// const accordionContents = document.querySelectorAll(".accordeon-content");
+// const accordeonTitle = document.querySelectorAll(".accordeon-title");
+
+// accordionHeaders.forEach((accordionHeader, index) => {
+//   accordionHeader.addEventListener("click", () => {
+//     accordionContents[index].classList.toggle("active");
+//     accordionHeader.classList.toggle("active");
+//     accordeonTitle[index].classList.toggle("active");
+//     const accordionIcon = accordionHeader.querySelector(".accordeon-minus img");
+//     accordionIcon.src = accordionContents[index].classList.contains("active")
+//       ? "../images/accordeon-minus.svg"
+//       : "../images/accordeon-plus-white.svg";
+//   });
+// });
+
 // accordeon
-const accordionHeaders = document.querySelectorAll(".accordeon-header");
-const accordionContents = document.querySelectorAll(".accordeon-content");
-const accordeonTitle = document.querySelectorAll(".accordeon-title");
+const accordionHeaders = document.querySelectorAll(".mt__accordeon-header");
+const accordionContents = document.querySelectorAll(".mt__accordeon-content");
+const accordeonTitle = document.querySelectorAll(".mt__accordeon-title");
 
 accordionHeaders.forEach((accordionHeader, index) => {
   accordionHeader.addEventListener("click", () => {
     accordionContents[index].classList.toggle("active");
     accordionHeader.classList.toggle("active");
     accordeonTitle[index].classList.toggle("active");
-    const accordionIcon = accordionHeader.querySelector(".accordeon-minus img");
+    const accordionIcon = accordionHeader.querySelector(".mt__accordeon-minus img");
     accordionIcon.src = accordionContents[index].classList.contains("active")
       ? "../images/accordeon-minus.svg"
       : "../images/accordeon-plus-white.svg";
