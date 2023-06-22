@@ -2202,14 +2202,14 @@ margin: 30px 0;
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 .main__content-subtitle{
     font-weight: 700;
     font-size: 15px;
     line-height: 130%;
-    margin-bottom: 20px;
+    padding: 0;
 }
 
 .content-title-img {
@@ -2224,7 +2224,7 @@ margin: 30px 0;
   background-position: center;
 }
 
-.main__content-recommend {
+.tr__main__content-recommend {
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
