@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../styles/account.css">
     <link rel="stylesheet" href="../styles/resetStyles.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../modalWindow/style.css">
     <script src="./index.js" defer></script>
+    <script src="../main.js" defer></script>
 
-    <title>accountChangeData</title>
+    <title>account</title>
 </head>
 
 <body>
@@ -27,8 +28,7 @@
                         <button class="header__search-btn"></button>
                     </div>
                     <div class="header__auth">
-                        <img src="../images/account-man.svg" alt="auth" class="auth modal-open-btn"
-                            data-modal-target="moduleLogIn">
+                        <img src="../images/account-man.svg" alt="auth">
                     </div>
                     <div class="modal-windows">
                         <div data-modal-window="moduleQuestion" class="modal">
@@ -68,13 +68,11 @@
                     </div>
                     <h1 class="main__title">Личный кабинет</h1>
                     <div class="main__content-recommend">
-                        <div class="main__change">
-                            <input class="main__change-input-private" placeholder="E-mail">
-                            <input class="main__change-input-private" placeholder="Name">
-                            <input class="main__change-input-private" placeholder="Phone">
-                            <div class="main__btn">
-                                <button class="main-btn">Сохранить изменения</button>
-                            </div>
+                        <p class="main__text">E-mail: <span>mail@mail.ru</span></p>
+                        <p class="main__text">Имя: <span>Иван</span></p>
+                        <p class="main__text">Телефон: <span>+7 965 166 87 97</span></p>
+                        <div class="main__btn">
+                            <button class="main-btn">Показать еще</button>
                         </div>
                     </div>
 
