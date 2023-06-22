@@ -819,7 +819,6 @@ main{
   max-width: 756px;
   width: 100%;
   text-align: left;
-  padding: 0;
 }
 
   /* main template */
@@ -2376,44 +2375,6 @@ margin: 30px 0;
 }
 
 /* serch results */
-
-/* *,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.wrapper {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-main{
-  background-color: #F0F1F3;
-  flex: 1;
-}
-.modal .main__btn {
-  margin-bottom: 0;
-}
-
-.main__container {
-  padding: 31px 0 110px 10px;
-  margin: 0 auto;
-  max-width: 756px;
-  width: 100%;
-  text-align: left;
-} */
 
 .main__content-arrow {
   display: flex;
