@@ -469,7 +469,6 @@ footer {
   }
 
   label:before {
-    content: "";
     display: inline-block;
     position: absolute;
     left: 0;
@@ -824,7 +823,7 @@ main{
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
-    padding: 5px 10px;
+    padding: 17px 25px 14px 20px;
 }
 
 .main__content-recommend hr {
@@ -868,7 +867,7 @@ main{
 }
 
 .description-text {
-    padding: 0 46px 17px 14px;
+    padding: 0 46px 0 14px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -1071,7 +1070,7 @@ main{
 }
 
 .main__content-description__article {
-  padding: 21px 0 10px 19px;
+  padding: 21px 19px 10px 19px;
   margin-bottom: 132px;
   width: 100%;
   background: #FFFFFF;
@@ -1079,9 +1078,15 @@ main{
   font-size: 15px;
   line-height: 150%;
 }
+.main__content-description__article h3{
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 5px 0;
+}
 
 .main__content-description__article p{
-    padding: 10px 0px;
+    padding: 10px 10px;
 }
 
 .main__content-description__article hr,
@@ -1092,6 +1097,10 @@ hr {
     height: 2px; 
     margin: 20px;
    }
+
+.main__content-description__article img {
+  padding-bottom: 26px;
+}
 
 .main__content .main__content-arrow p {
   padding-bottom: 0;
@@ -1268,7 +1277,7 @@ margin: 30px 0;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     margin: 11px 0;
-    padding: 20px;
+    padding: 10px;
 }
 
 .tr__main__content-recommend span{
@@ -1370,7 +1379,7 @@ margin: 30px 0;
 
 .main__change-input-private {
     border-radius: 25px;
-    width: 100%;
+    width: 74%;
     border: none;
     background: #F0F1F3;
     padding: 12px 17px;
@@ -1384,13 +1393,13 @@ margin: 30px 0;
     color: #BFBFC1;
 }
 
- @media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
     .tabs {
       min-width: 10px;
     }
 }
 
-  @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .main__inner {
       display: flex;
       flex-direction: column;
@@ -1676,6 +1685,10 @@ margin: 30px 0;
       font-size: 11px;
   }
 
+  .tr__main__content-recommend img {
+    width: 248px;
+    height: 184px;
+  }
   
   .description-desc {
       margin-left: 0;
@@ -1875,7 +1888,7 @@ margin: 30px 0;
     line-height: 11px;
   }
   .tab-label::before{
-    z-index: -1;
+    z-index: -10000;
   }
 
   .footer__link {
@@ -1891,6 +1904,9 @@ margin: 30px 0;
 }
 
 @media screen and (max-width: 358px) {
+  .tr__main__content-recommend {
+    align-items: center;
+  }
   .modal .share-modal_content {
     margin-right: 0;
     margin-left: 45px;
