@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/account_change_data.css">
-    <link rel="stylesheet" href="../styles/resetStyles.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/modal_window.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <script src="../js/main.js" defer></script>
 
     <title>accountChangeData</title>
@@ -22,10 +18,10 @@
                     <div class="header__logo">
                         <img src="../images/header_logo.svg" alt="logo">
                     </div>
-                    <div class="header__search">
+                    <form class="header__search">
                         <input type="text" placeholder="Поиск" class="header__search-input">
                         <button class="header__search-btn"></button>
-                    </div>
+                    </form>
                     <div class="header__auth">
                         <img src="../images/account-man.svg" alt="auth">
                     </div>
@@ -36,7 +32,7 @@
                                     <div class="modal_title">Задать вопрос</div>
                                     <div class="close_modal_window">&times;</div>
                                 </div>
-                                <div class="module-main__content">
+                                <form class="module-main__content">
                                     <input class="main__change-input" placeholder="Имя">
                                     <input class="main__change-input" placeholder="E-mail">
                                     <input class="main__change-input" placeholder="Телефон">
@@ -50,7 +46,7 @@
                                         <label for="myCheckbox"></label>
                                         <p>Нажимая вы соглашаетесь на обработку <a>персональных данных</a></p>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -60,27 +56,27 @@
 
         <main class="main">
             <div class="main__container">
-                <div class="main__inner">
+                <div class="mt__main__inner">
                     <div class="main__content-arrow">
                         <img src="../images/arrow-back.svg" alt="arrow-back">
                         <p>Назад</p>
                     </div>
                     <h1 class="main__title">Личный кабинет</h1>
-                    <div class="main__content-recommend">
-                        <div class="main__change">
+                    <div class="tr__main__content-recommend">
+                        <form class="main__change">
                             <input class="main__change-input-private" placeholder="E-mail">
                             <input class="main__change-input-private" placeholder="Name">
                             <input class="main__change-input-private" placeholder="Phone">
                             <div class="main__btn">
-                                <button class="main-btn">Сохранить изменения</button>
+                                <button class="account__main-btn">Сохранить изменения</button>
                             </div>
-                        </div>
+                        </form>
                     </div>
 
-                    <div class="main__content-recommend">
+                    <div class="tr__main__content-recommend">
                         <p class="main__text">Пароль <span>***********</span></p>
                         <div class="main__btn">
-                            <button class="main-btn">Изменить пароль</button>
+                            <button class="account__main-btn">Изменить пароль</button>
                         </div>
                     </div>
 

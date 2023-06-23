@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/account.css">
-    <link rel="stylesheet" href="../styles/resetStyles.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/modal_window.css">
-    <script src="./index.js" defer></script>
-    <script src="../main.js" defer></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../js/main.js" defer></script>
 
     <title>account</title>
 </head>
@@ -23,10 +18,10 @@
                     <div class="header__logo">
                         <img src="../images/header_logo.svg" alt="logo">
                     </div>
-                    <div class="header__search">
+                    <form class="header__search">
                         <input type="text" placeholder="Поиск" class="header__search-input">
                         <button class="header__search-btn"></button>
-                    </div>
+                    </form>
                     <div class="header__auth">
                         <img src="../images/account-man.svg" alt="auth">
                     </div>
@@ -37,7 +32,7 @@
                                     <div class="modal_title">Задать вопрос</div>
                                     <div class="close_modal_window">&times;</div>
                                 </div>
-                                <div class="module-main__content">
+                                <form class="module-main__content">
                                     <input class="main__change-input" placeholder="Имя">
                                     <input class="main__change-input" placeholder="E-mail">
                                     <input class="main__change-input" placeholder="Телефон">
@@ -46,12 +41,12 @@
                                     <div class="module-main__btn">
                                         <button class="main-btn">Отправить</button>
                                     </div>
-                                    <div class="main__checkbox">
+                                    <form class="main__checkbox">
                                         <input type="checkbox" id="myCheckbox">
                                         <label for="myCheckbox"></label>
                                         <p>Нажимая вы соглашаетесь на обработку <a>персональных данных</a></p>
-                                    </div>
-                                </div>
+                                    </form>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -61,25 +56,25 @@
 
         <main class="main">
             <div class="main__container">
-                <div class="main__inner">
+                <div class="mt__main__inner">
                     <div class="main__content-arrow">
                         <img src="../images/arrow-back.svg" alt="arrow-back">
                         <p>Назад</p>
                     </div>
                     <h1 class="main__title">Личный кабинет</h1>
-                    <div class="main__content-recommend">
+                    <div class="tr__main__content-recommend">
                         <p class="main__text">E-mail: <span>mail@mail.ru</span></p>
                         <p class="main__text">Имя: <span>Иван</span></p>
                         <p class="main__text">Телефон: <span>+7 965 166 87 97</span></p>
                         <div class="main__btn">
-                            <button class="main-btn">Показать еще</button>
+                            <button class="account__main-btn">Показать еще</button>
                         </div>
                     </div>
 
-                    <div class="main__content-recommend">
+                    <div class="tr__main__content-recommend">
                         <p class="main__text">Пароль <span>***********</span></p>
                         <div class="main__btn">
-                            <button class="main-btn">Изменить пароль</button>
+                            <button class="account__main-btn">Изменить пароль</button>
                         </div>
                     </div>
 
