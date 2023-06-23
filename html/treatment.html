@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../styles/resetStyles.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/navigation.css">
-    <link rel="stylesheet" href="../modalWindow/style.css">
-    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../js/main.js" defer></script>
     <title>treatment</title>
 </head>
 
@@ -22,10 +17,10 @@
                     <div class="header__logo">
                         <img src="../images/header_logo.svg" alt="logo">
                     </div>
-                    <div class="header__search">
+                    <form class="header__search">
                         <input type="text" placeholder="Поиск" class="header__search-input">
                         <button class="header__search-btn"></button>
-                    </div>
+                    </form>
                     <div class="header__auth">
                         <img src="../images/auth.svg" alt="auth" class="auth modal-open-btn"
                             data-modal-target="moduleLogIn">
@@ -37,7 +32,7 @@
                                     <div class="modal_title">Вход в личный кабинет</div>
                                     <div class="close_modal_window">&times;</div>
                                 </div>
-                                <div class="main__content">
+                                <form class="main__content">
                                     <input class="main__change-input" placeholder="E-mail">
                                     <input class="main__change-input" placeholder="Пароль">
                                     <div class="main__btn">
@@ -48,7 +43,7 @@
                                     <div class="main__link">
                                         <p><a>Забыли пароль</a></p>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
 
@@ -76,7 +71,7 @@
                                     <div class="modal_title">Регистрация</div>
                                     <div class="close_modal_window">&times;</div>
                                 </div>
-                                <div class="main__content">
+                                <form class="main__content">
                                     <input class="main__change-input" placeholder="Ваше имя">
                                     <input class="main__change-input" placeholder="Телефон">
                                     <input class="main__change-input" placeholder="E-mail">
@@ -88,7 +83,7 @@
                                     <div class="main__link">
                                         <p><a>Войти по логину</a></p>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
 
@@ -98,14 +93,14 @@
                                     <div class="modal_title-password">Вспомнить пароль</div>
                                     <div class="close_modal_window">&times;</div>
                                 </div>
-                                <div class="main__content">
+                                <form class="main__content">
                                     <p>Что восстановить вход введите ваш почнотый ящик и мы отправим на него данные для
                                         восстановления пароля.</p>
                                     <input class="main__change-input" placeholder="E-mail">
                                     <div class="main__btn">
                                         <button class="main-btn">Отправить</button>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
 
@@ -115,7 +110,7 @@
                                     <div class="modal_title">Задать вопрос</div>
                                     <div class="close_modal_window">&times;</div>
                                 </div>
-                                <div class="module-main__content">
+                                <form class="module-main__content">
                                     <input class="main__change-input" placeholder="Имя">
                                     <input class="main__change-input" placeholder="E-mail">
                                     <input class="main__change-input" placeholder="Телефон">
@@ -129,7 +124,7 @@
                                         <label for="myCheckbox"></label>
                                         <p>Нажимая вы соглашаетесь на обработку <a>персональных данных</a></p>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -163,7 +158,7 @@
         </div>
 
         <main class="main">
-            <div class="main__container">
+            <div class="main__container-double">
                 <div class="main__inner">
                     <div class="main__navigation">
                         <div class="main__nav">
@@ -206,7 +201,7 @@
                                 </div>
                             </div>
                             <h3 class="main__content-subtitle">Клиническое и рентгенологическое обследование</h3>
-                            <div class="main__content-recommend">
+                            <div class="tr__main__content-recommend">
                                 <h2 class="recommend__title">Фаза 1: травма до конца 3-й недели после травмы
                                     (воспалительная фаза)</h2>
                                 <p class="recommend__text"><span>Принцип фазы 1:</span> защита поврежденной
@@ -246,7 +241,7 @@
                                 <img src="../images/treatment_3.png" alt="treatment">
                             </div>
 
-                            <div class="main__content-recommend">
+                            <div class="tr__main__content-recommend">
                                 <h2 class="recommend__title">Фаза 2: С начала 4-й по конец 6-й недели после травмы
                                     (ранняя фаза восстановления)</h2>
                                 <p class="recommend__text"><span>Принцип фазы 1:</span> защита поврежденной
@@ -286,7 +281,7 @@
                                 <img src="../images/treatment_3.png" alt="treatment" class="recommend__img">
                             </div>
 
-                            <div class="main__content-recommend">
+                            <div class="tr__main__content-recommend">
                                 <h2 class="recommend__title">Фаза 4: Начало 13-й недели после травмы (фаза
                                     восстановления и реинтеграции)</h2>
                                 <p class="recommend__text"><span>Принцип фазы 4:</span> нормализация проприоцептивной
@@ -305,6 +300,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </main>
 
         <footer class="footer">
