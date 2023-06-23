@@ -92,37 +92,37 @@ window.addEventListener("scroll", () => {
   lastScrollPosition = currentScrollPosition;
 });
 
-// // accordeon
-// const accordionHeaders = document.querySelectorAll(".accordeon-header");
-// const accordionContents = document.querySelectorAll(".accordeon-content");
-// const accordeonTitle = document.querySelectorAll(".accordeon-title");
-
-// accordionHeaders.forEach((accordionHeader, index) => {
-//   accordionHeader.addEventListener("click", () => {
-//     accordionContents[index].classList.toggle("active");
-//     accordionHeader.classList.toggle("active");
-//     accordeonTitle[index].classList.toggle("active");
-//     const accordionIcon = accordionHeader.querySelector(".accordeon-minus img");
-//     accordionIcon.src = accordionContents[index].classList.contains("active")
-//       ? "../images/accordeon-minus.svg"
-//       : "../images/accordeon-plus-white.svg";
-//   });
-// });
-
-// accordeon main template
-const accordionHeaders = document.querySelectorAll(".mt__accordeon-header");
-const accordionContents = document.querySelectorAll(".mt__accordeon-content");
-const accordeonTitle = document.querySelectorAll(".mt__accordeon-title");
+// accordeon
+const accordionHeaders = document.querySelectorAll(".accordeon-header");
+const accordionContents = document.querySelectorAll(".accordeon-content");
+const accordeonTitle = document.querySelectorAll(".accordeon-title");
 
 accordionHeaders.forEach((accordionHeader, index) => {
   accordionHeader.addEventListener("click", () => {
     accordionContents[index].classList.toggle("active");
     accordionHeader.classList.toggle("active");
     accordeonTitle[index].classList.toggle("active");
-    const accordionIcon = accordionHeader.querySelector(".mt__accordeon-minus img");
+    const accordionIcon = accordionHeader.querySelector(".accordeon-minus img");
     accordionIcon.src = accordionContents[index].classList.contains("active")
       ? "../images/accordeon-minus.svg"
       : "../images/accordeon-plus-white.svg";
+  });
+});
+
+// accordeon main template
+const accordionMTHeaders = document.querySelectorAll(".mt__accordeon-header");
+const accordionMTContents = document.querySelectorAll(".mt__accordeon-content");
+const accordionMTIcons = document.querySelectorAll(".mt__accordeon-minus img");
+
+accordionMTHeaders.forEach((accordionHeader, index) => {
+  accordionHeader.addEventListener("click", () => {
+    accordionMTContents[index].classList.toggle("active");
+    accordionHeader.classList.toggle("active");
+    const accordionIcon = accordionMTIcons[index];
+
+    accordionMTContents[index].classList.contains("active")
+      ? (accordionIcon.src = "../images/accordeon-minus.svg")
+      : (accordionIcon.src = "../images/accordeon-plus.svg");
   });
 });
 
@@ -132,7 +132,8 @@ const closeModalBtns = document.querySelectorAll(".close_modal_window");
 const modalContainers = document.querySelectorAll(".modal");
 
 openModalAuthBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
+  btn.addEventListener("click", (event) => {
+    event.preventDefault();
     const modalTarget = btn.getAttribute("data-modal-target");
     const modal = document.querySelector(
       `[data-modal-window="${modalTarget}"]`
@@ -153,17 +154,15 @@ const loginLink = document.querySelector(
   '[data-modal-window="moduleSignUp"] .main__link a'
 );
 if (loginLink) {
-  loginLink.addEventListener("click", () => {
+  loginLink.addEventListener("click", (event) => {
+    event.preventDefault();
     const signUpModal = document.querySelector(
       '[data-modal-window="moduleSignUp"]'
     );
-
     signUpModal.style.display = "none";
-
     const loginModal = document.querySelector(
       '[data-modal-window="moduleLogIn"]'
     );
-
     loginModal.style.display = "block";
   });
 }
@@ -172,7 +171,8 @@ const forgotPasswordLink = document.querySelector(
   '[data-modal-window="moduleLogIn"] .main__link a'
 );
 if (forgotPasswordLink) {
-  forgotPasswordLink.addEventListener("click", () => {
+  forgotPasswordLink.addEventListener("click", (event) => {
+    event.preventDefault();
     const openModals = document.querySelectorAll(".modal");
     openModals.forEach((modal) => {
       modal.style.display = "none";
@@ -191,7 +191,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const modals = document.querySelectorAll(".modal");
 
   modalButtons.forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
       const modalId = button.dataset.modalBtn;
       const modal = document.querySelector(`[data-modal-window="${modalId}"]`);
 
