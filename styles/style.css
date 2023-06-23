@@ -784,7 +784,7 @@ main{
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 150%;
+    line-height: 120%;
 }
 
 .main__content {
@@ -1277,11 +1277,15 @@ margin: 30px 0;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     margin: 11px 0;
-    padding: 10px;
+    padding: 20px;
 }
 
 .tr__main__content-recommend span{
   font-weight: 700;
+}
+
+.search{
+      padding: 15px;
 }
 
 .recommend__title{
@@ -1299,6 +1303,12 @@ margin: 30px 0;
     font-weight: 700;
     font-size: 15px;
     line-height: 150%;
+}
+
+ li{
+list-style-type: disc;
+list-style-position: inside;
+margin-bottom: 5px;
 }
 
 .recommend__subtitle{
