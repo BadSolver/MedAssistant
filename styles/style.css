@@ -833,7 +833,7 @@ main{
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 
 .main__text {
@@ -1071,14 +1071,6 @@ main{
 
 .main__content-recommend p:last-child{
    border: none;
-}
-
-.main__content-subtitle {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 23px;
-    padding-top: 29px;
 }
 
 .main__content-description {
@@ -1393,27 +1385,6 @@ main{
   padding-left: 75px;
 }
 
-.main__content-arrow {
-  display: flex;
-  justify-content: space-between;
-  max-width: 79px;
-  padding-top: 22px;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 16px;
-  color: #39CE8E;
-}
-
-.main__content-title {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 26px;
-  padding-bottom: 20px;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
-}
-
 .content-title-img {
   display: flex;
   align-items: center;
@@ -1424,18 +1395,6 @@ main{
   background: url(../images/triangle.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.main__content-description {
-  padding: 21px 132px 0 19px;
-  margin-bottom: 119px;
-  max-width: 756px;
-  width: 100%;
-  background: #FFFFFF;
-  border-radius: 5px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 150%;
 }
 
 .main__content .main__content-arrow p{
@@ -1634,7 +1593,8 @@ main{
 }
 
 .main__content-description__article {
-  padding: 21px 132px 0 19px;
+  padding: 21px 0 10px 19px;
+  margin-bottom: 132px;
   width: 100%;
   background: #FFFFFF;
   border-radius: 5px;
@@ -1652,13 +1612,13 @@ main{
     padding: 10px 0px;
 }
 
-.main__content-description__article hr {
+.main__content-description__article hr,
+hr {
     border: none; 
     background-color: #EFFAE5; 
     color: #EFFAE5; 
     height: 2px; 
-    max-width: 700px;
-    margin: 20px 0;
+    margin: 20px;
    }
 
 .main__content .main__content-arrow p {
@@ -1683,7 +1643,7 @@ main{
     padding-left: 0;
   }
 
-  .main__content-description {
+  .main__content-description__article {
     margin-bottom: 0;
   }
 
@@ -1733,14 +1693,14 @@ main{
       height: 184px;
   }
 
-  .main__content-description {
+  .main__content-description__article {
     padding: 22px 16px 0 16px;
     font-weight: 400;
     font-size: 11px;
     line-height: 130%;
   }
 
-  .main__content-description h3{
+  .main__content-description__article h3{
    font-weight: 700;
    font-size: 17px;
    margin: 5px 0;
@@ -2209,6 +2169,7 @@ margin: 30px 0;
     font-size: 15px;
     line-height: 130%;
     padding: 0;
+    margin: 15px 0;
 }
 
 .content-title-img {
@@ -2229,8 +2190,12 @@ margin: 30px 0;
     background: #FFFFFF;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
-    margin-top: 11px;
+    margin: 11px 0;
     padding: 20px;
+}
+
+.tr__main__content-recommend span{
+  font-weight: 700;
 }
 
 .main__content-recommend hr {
@@ -2250,7 +2215,7 @@ margin: 30px 0;
 }
 
 .recommend__text{
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     line-height: 150%;
 }
 
@@ -2272,7 +2237,7 @@ margin: 30px 0;
     margin: 20px;
 }
 
-.main__content-recommend:last-child{
+.tr__main__content-recommend:last-child{
    margin-bottom: 100px;
 }
 
@@ -2312,8 +2277,8 @@ margin: 30px 0;
         padding-bottom: 70px;
     }
 
-    .main__content-recommend:last-child{
-         margin-bottom: 45px;
+    .tr__main__content-recommend:last-child{
+         margin-bottom: 50px;
 }
   }
   
@@ -2376,78 +2341,13 @@ margin: 30px 0;
 
 /* serch results */
 
-.main__content-arrow {
-  display: flex;
-  justify-content: space-between;
-  max-width: 79px;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 16px;
-  color: #39CE8E;
-  margin: 0 0 20px 0;
-}
-
-.main__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
-  margin-bottom: 15px;
-}
-
-.main__text span{
-    font-size: 15px;
-    line-height: 22px;  
-}
-
-.main__content-recommend {
-    display: flex;
-    flex-direction: column;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
-    margin-top: 11px;
-    padding: 20px;
-}
-
-.main__content-recommend hr {
-    border: none; 
-    background-color: #EFFAE5; 
-    color: #EFFAE5; 
-    height: 2px; 
-    max-width: 700px;
-    margin: 15px;
-   }
-
-.recommend__text span{
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 22px;
-}
-
-.recommend__text{
-    font-size: 15px;
-    line-height: 22px;
-}
-
-.main__btn{
+.search__main__btn{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 100px;
-}
-
-.main-btn{
-    color: #39CE8E;
-    border: 1px solid #39CE8E;
-    font-weight: 700;
-    font-size: 15px;
-    background-color: transparent;
-    border-radius: 20px;
-    min-width: 220px;
-    min-height: 40px;
 }
 
 .main-btn-more {
@@ -2521,11 +2421,15 @@ margin: 30px 0;
     line-height: 130%;
   }
 
+  .search__main__btn{
+    margin-bottom: 30px;
+  }
+
   .main-btn {
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
-    margin: 0;
+    margin: 0 0 10px 0;
   }
 
     .btn-arrow-up {
@@ -2538,63 +2442,7 @@ margin: 30px 0;
   }
 }
 
-/* serch no matches */
-
 /* account */
-
-.main__content-arrow {
-  display: flex;
-  justify-content: space-between;
-  max-width: 79px;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 16px;
-  color: #39CE8E;
-  margin: 0 0 20px 0;
-}
-
-.main__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
-  margin-bottom: 15px;
-}
-
-.main__text {
-  font-style: normal;
-  font-size: 15px;
-  line-height: 22px;
-  margin-bottom: 22px;
-  margin-bottom: 20px;
-}
-
-.main__text span{
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 22px;  
-}
-
-.main__content-recommend {
-    display: flex;
-    flex-direction: column;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
-    margin-top: 11px;
-    padding: 20px;
-}
-
-.recommend__text span{
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 22px;
-}
-
-.recommend__text{
-    font-size: 15px;
-    line-height: 22px;
-}
 
 .account__main-btn{
     color: #39CE8E;
@@ -2664,8 +2512,7 @@ margin: 30px 0;
 }
 
 .main__change-input-private::placeholder {
-    font-weight: 700;
     font-size: 13px;
     line-height: 16px;
-    color: #232425;
+    color: #BFBFC1;
 }
